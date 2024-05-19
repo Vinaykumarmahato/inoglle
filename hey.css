@@ -1,0 +1,85 @@
+/* Slider Container */
+.slider-container-vinay {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Slide Track */
+.slider-container-vinay .slide-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: max-content; /* Adjusts width based on content */
+}
+
+/* Individual Slides */
+.slider-container-vinay .slide {
+    min-width: 150px; /* Adjust size as needed */
+    margin: 10px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(7, 5, 5, 0.288);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease; /* Add subtle hover effect */
+}
+
+.slider-container-vinay .slide img {
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Adjust size as needed */
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+/* Navigation Buttons */
+.slider-container-vinay .prev, .slider-container-vinay .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(33, 223, 33, 0.5);
+    border: none;
+    border-radius: 50%;
+    color: #c231dfd0;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-container-vinay .prev {
+    left: 10px;
+}
+
+.slider-container-vinay .next {
+    right: 10px;
+}
+
+.slider-container-vinay .prev:hover, .slider-container-vinay .next:hover {
+    background-color: rgba(231, 46, 200, 0.8);
+}
+
+/* Hover Effect for Slides */
+.slider-container-vinay .slide:hover {
+    transform: scale(1.05); /* Increase size on hover */
+    box-shadow: 0 8px 12px rgba(155, 9, 111, 0.37); /* Add shadow on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .slider-container-vinay .prev, .slider-container-vinay .next {
+        width: 35px;
+        height: 35px;
+        font-size: 1.5rem;
+    }
+}

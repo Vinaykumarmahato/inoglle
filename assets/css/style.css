@@ -11578,3 +11578,73 @@ p {
   text-transform: capitalize !important;
   margin-top: 42px;
 }
+
+/* Button Styling */
+#button-vinay {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #ff00c8, #0056b3);
+  border: none;
+  border-radius: 50rem; /* Rounded-pill shape */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+  text-align: center;
+  text-decoration: none;
+}
+
+#button-vinay:hover {
+  background: linear-gradient(135deg, #0056b3, #003d82);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.5);
+}
+
+#button-vinay span {
+  margin-left: 0.5rem;
+  transition: margin-left 0.3s ease;
+}
+
+#button-vinay:hover span {
+  margin-left: 1rem;
+}
+
+#button-vinay i {
+  transition: transform 0.3s ease;
+}
+
+#button-vinay:hover i {
+  transform: translateX(5px);
+}
+
+/* Responsive Font Sizes */
+@media (max-width: 1200px) {
+  #button-vinay {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #button-vinay {
+    font-size: 0.9rem;
+    padding: 0.65rem 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #button-vinay {
+    font-size: 0.85rem;
+    padding: 0.6rem 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #button-vinay {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+
