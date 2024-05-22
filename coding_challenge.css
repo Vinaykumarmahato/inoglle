@@ -1,0 +1,233 @@
+
+
+/* Card styles */
+.card {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: -8px;
+    margin-bottom: 30px;
+    margin-left: -25px;
+}
+
+/* Card title styles */
+.card-title {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Challenge list styles */
+.challenge-list {
+    list-style: none;
+}
+
+/* Challenge item styles */
+.challenge-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.challenge-item img {
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+.challenge-info {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* Participation steps styles */
+.participation-steps {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.participation-steps li {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .section {
+        border-radius: 0;
+    }
+
+    .card {
+        border-radius: 0;
+    }
+
+    .card-title {
+        font-size: 2em;
+    }
+
+    .challenge-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .challenge-item img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .challenge-info {
+        margin-left: 0;
+    }
+}
+
+/* Container styles */
+#vinaykumarmahato {
+    max-width: 1235px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #f9f9f9;
+    background-image: url('/soft\ .png'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+/* Base styles */
+#vinaykumarmahato h1 {
+    font-size: 4vw; /* Font size using viewport width unit */
+    color: transparent; /* Make the text transparent */
+    margin-bottom: 3vw; /* Margin using viewport width unit */
+    text-align: center;
+    text-shadow: 0.5vw 0.5vw 1vw rgba(0, 0, 0, 0.62); /* Text shadow using viewport width unit */
+    background-image: url('/images/banner/ADV\ SparkTech\ Club.png'); /* Replace 'your_image.jpg' with the path to your image */
+    background-size: cover; /* Ensure the background image covers the entire element */
+    background-position: center; /* Center the background image */
+    -webkit-background-clip: text; /* Clip the background image to the text */
+    background-clip: text; /* Clip the background image to the text */
+}
+
+
+
+
+/* Media query for small screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+    #vinaykumarmahato h1 {
+        font-size: 6vw; /* Adjusted font size for smaller screens */
+        margin-bottom: 4vw; /* Adjusted margin for smaller screens */
+        text-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.5); /* Adjusted text shadow for smaller screens */
+    }
+}
+
+/* Image styles */
+#vinaykumarmahato img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Subheading styles */
+#vinaykumarmahato h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Paragraph styles */
+#vinaykumarmahato p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* List styles */
+#vinaykumarmahato ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+/* List item styles */
+#vinaykumarmahato li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Strong tag styles */
+#vinaykumarmahato strong {
+    color: #007bff;
+}
+
+/* Link styles */
+#vinaykumarmahato a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    #vinaykumarmahato {
+        padding: 30px;
+    }
+
+    #vinaykumarmahato h1 {
+        font-size: 2.5em;
+    }
+
+    #vinaykumarmahato h2 {
+        font-size: 2em;
+    }
+
+    #vinaykumarmahato p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #vinaykumarmahato h1 {
+        font-size: 1.5em;
+    }
+
+    #vinaykumarmahato h2 {
+        font-size: 1.5em;
+    }
+
+    #vinaykumarmahato p {
+        font-size: 0.9em;
+    }
+}
