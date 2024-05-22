@@ -10,7 +10,8 @@
     margin-left: -25px;
 }
 .card h2{
-    font-size: 3vw; /* Font size using viewport width unit */
+    font-size: 4vw;
+    margin-top: 8px;
     color: transparent; /* Make the text transparent */
     margin-bottom: 3vw; /* Margin using viewport width unit */
     text-align: center;
@@ -20,6 +21,26 @@
     background-position: center; /* Center the background image */
     -webkit-background-clip: text; /* Clip the background image to the text */
     background-clip: text; /* Clip the background image to the text */
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .card h2 {
+        font-size: 6vw; /* Adjust font size for smaller screens */
+        margin-top: 10px; /* Adjust margin for smaller screens */
+        margin-bottom: 5vw; /* Adjust margin for smaller screens */
+        text-shadow: 1vw 1vw 2vw rgba(1, 5, 8, 0.254); /* Adjust text shadow for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card h2 {
+        font-size: 6vw; /* Further adjust font size for even smaller screens */
+        margin-top: 12px; /* Further adjust margin for even smaller screens */
+        margin-bottom: 6vw; /* Further adjust margin for even smaller screens */
+        text-shadow: 1.5vw 1.5vw 3vw rgba(1, 5, 8, 0.254); /* Further adjust text shadow for even smaller screens */
+    }
 }
 
 /* Card title styles */
