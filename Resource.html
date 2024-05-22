@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ADV SparkTech Club</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/coding_challenge.css">
+</head>
+
+<body>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////
+                               START SECTION 1 - THE NAVBAR SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////////-->
+    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="">
+                <img src="images/ADV LOGO SparkTech Without Background.png" alt="logo image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProducts" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Our Offerings</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownProducts">
+                            <li><a class="dropdown-item" href="/coding_challenge.html">Coding Challenges</a></li>
+                            <li><a class="dropdown-item" href="/coding_challenge.html">Hackathons</a></li>
+                            <li><a class="dropdown-item" href="/coding_challenge.html">Idea Generation</a></li>
+                            <li><a class="dropdown-item" href="/coding_challenge.html">Skill Workshops</a></li>
+                            <li><a class="dropdown-item" href="/coding_challenge.html">Online Seminars</a></li>
+                            <li><a class="dropdown-item" href="/coding_challenge.html">Mentorship</a></li>
+                            <li><a class="dropdown-item" href="/coding_challenge.html">Networking Events</a></li>
+                            <li><a class="dropdown-item" href="/coding_challenge.html">Soft Skills Training</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="/index.html#what-we-offer">Programs</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLinks" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Useful Links</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLinks">
+
+                            <li><a class="dropdown-item" href="/index.html#what-we-offer">Programs</a></li>
+                            <li><a class="dropdown-item" href="#">Join Us</a></li>
+                            <li><a class="dropdown-item" href="#">Career Opportunities</a></li>
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                            <li><a class="dropdown-item" href="/Resource.html">Resources</a></li>
+                            <li><a class="dropdown-item" href="#">Gallery</a></li>
+                            <li><a class="dropdown-item" href="/index.html#faq">FAQ</a></li>
+                            <li><a class="dropdown-item" href="#">Partners and Sponsors</a></li>
+                            <li><a class="dropdown-item" href="/index.html#contact">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy Policy and Terms of Use</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </nav>
+    <!-- Slider -->
+    <div class="slider-container">
+        <div class="slide active">
+            <a href=""> <img src="./images/banner/main (1).png" alt="">
+            </a>
+        </div>
+
+    </div>
+
+    <style>
+
+/* Base styles */
+.section-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.section-header h1 {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.section-header .position-relative {
+    position: relative;
+    margin-top: 20px;
+}
+
+.section-header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Button styles */
+.section-header .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #c51668;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.section-header .btn:hover {
+    background-color: #0056b3;
+}
+
+.section-header .free-label {
+    font-size: 0.8em;
+    color: #fff;
+    background-color: #eb492d;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .section-header h1 {
+        font-size: 1.5em;
+    }
+    
+    .section-header .btn {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+    
+    .section-header .free-label {
+        font-size: 0.7em;
+        padding: 1px 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-header h1 {
+        font-size: 1.2em;
+    }
+    
+    .section-header .btn {
+        font-size: 0.9em;
+        padding: 6px 12px;
+    }
+    
+    .section-header .free-label {
+        font-size: 0.6em;
+        padding: 1px 4px;
+    }
+}
+
+
+        /* Resources Section */
+.resources-section {
+    padding: 50px 0;
+}
+
+.resources-section .section-heading {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.resources-section .section-heading h2 {
+    font-size: 36px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.resources-section .section-heading p {
+    font-size: 18px;
+    color: #666;
+}
+
+.resources-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.resources-section .col-lg-4 {
+    padding: 0 15px;
+}
+
+.resources-section .resource-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resources-section .resource-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.resources-section .resource-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.resources-section .resource-item-content {
+    padding: 30px;
+}
+
+.resources-section .resource-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.resources-section .resource-item p {
+    font-size: 16px;
+    color: #a5a2a2;
+    margin-bottom: 10px;
+    /* font-weight: 600; */
+}
+.resources-section .resource-item button {
+    background-color: #ab0746;
+    color: #ffffff;
+    border: none;
+    padding: 4px 7px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+}
+
+
+.resources-section .resource-item h3 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+
+.resources-section .resource-item button:hover {
+    background-color: #21ee1a;
+}
+
+.resources-section .resource-item button a {
+    color: #fff; /* Text color for "View Now" */
+    text-decoration: none; /* Remove underline */
+}
+
+
+.youtuber-name-in-style {
+    font-weight: bold;
+    color: #4a90e2; /* You can adjust the color as per your preference */
+}
+
+.resource-item button {
+    background-color: #032405;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.resource-item button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Responsive Styling */
+@media (max-width: 1200px) {
+    .resources-section .col-lg-4 {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
+
+@media (max-width: 992px) {
+    .resources-section .col-lg-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .resources-section .col-lg-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+}
+    </style>
+
+
+    <main>
+
+
+        <section id="resources" class="resources-section">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <h2>Resources</h2>
+                    <p><h3>Explore useful resources related to various technologies and topics.</h3></p>
+                    <p><h4>Tech Resources Hub: Explore, Learn, and Innovate with ADV SparkTech Club</h4></p>
+                </div>
+                <div class="row">
+                    <!-- Java -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="resource-item">
+                            <img src="/img/about section AI.png" alt="Java YouTube Channels"
+                                class="img-fluid mb-3">
+                            <h3>Best YouTube Channels for Java:</h3>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/programmingwithmosh">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Programming with Mosh</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/derekbanas">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Derek Banas</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/javaboynavin">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Telusku</b>
+                            </p>
+                            <!-- Add more as needed -->
+                        </div>
+                    </div>
+
+                    <!-- Python -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="resource-item">
+                            <img src="/img/about section AI.png" alt="Python YouTube Channels"
+                                class="img-fluid mb-3">
+                            <h3>Best YouTube Channels for Python:</h3>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/schafer5">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Corey Schafer</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/sentdex">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Sentdex</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a
+                                        href="https://www.youtube.com/channel/UC4JX40jDee_tINbkjycV4Sg">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Tech With Tim</b>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- HTML & CSS -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="resource-item">
+                            <img src="/img/about section AI.png" alt="HTML & CSS YouTube Channels"
+                                class="img-fluid mb-3">
+                            <h3>Best YouTube Channels for HTML & CSS:</h3>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/TechGuyWeb">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Traversy Media</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a
+                                        href="https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫freeCodeCamp.org</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a
+                                        href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫The Net Ninja</b>
+                            </p>
+                            <!-- Add more as needed -->
+                        </div>
+                    </div>
+
+                    <!-- Web Development -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="resource-item">
+                            <img src="/img/about section AI.png" alt="Web Development YouTube Channels"
+                                class="img-fluid mb-3">
+                            <h3>Best YouTube Channels for Web Development:</h3>
+                            <p>
+                                <button id="Video-view"><a
+                                        href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫The Net Ninja</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/TechGuyWeb">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Traversy Media</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a
+                                        href="https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Academind</b>
+                            </p>
+                            <!-- Add more as needed -->
+                        </div>
+                    </div>
+
+                    <!-- Android Development -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="resource-item">
+                            <img src="/img/about section AI.png" alt="Android Development YouTube Channels"
+                                class="img-fluid mb-3">
+                            <h3>Best YouTube Channels for Android Development:</h3>
+                            <p>
+                                <button id="Video-view"><a
+                                        href="https://www.youtube.com/channel/UC_Fh8kvtkVPkeihBs42jGcA">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Coding in Flow</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/androiddevelopers">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Android Developers</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/TechGuyWeb">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Traversy Media</b>
+                            </p>
+                            <!-- Add more as needed -->
+                        </div>
+                    </div>
+                    <!-- Data Science -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="resource-item">
+                            <img src="/img/about section AI.png" alt="Data Science YouTube Channels"
+                                class="img-fluid mb-3">
+                            <h3>Best YouTube Channels for Data Science:</h3>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/sentdex">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Sentdex</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/dataschool">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Data School</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/krishnaik06">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Krish Naik</b>
+                            </p>
+                            <!-- Add more as needed -->
+                        </div>
+                    </div>
+
+                    <!-- Machine Learning -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="resource-item">
+                            <img src="/img/about section AI.png" alt="Machine Learning YouTube Channels"
+                                class="img-fluid mb-3">
+                            <h3>Best YouTube Channels for Machine Learning:</h3>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/andrewng">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Andrew Ng</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/sentdex">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Sentdex</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/krishnaik06">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Krish Naik</b>
+                            </p>
+                            <!-- Add more as needed -->
+                        </div>
+                    </div>
+
+                    <!-- Frontend Development -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="resource-item">
+                            <img src="/img/about section AI.png" alt="Frontend Development YouTube Channels"
+                                class="img-fluid mb-3">
+                            <h3>Best YouTube Channels for Frontend Development:</h3>
+                            <p>
+                                <button id="Video-view"><a
+                                        href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫The Net Ninja</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/TechGuyWeb">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Traversy Media</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a
+                                        href="https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Academind</b>
+                            </p>
+                            <!-- Add more as needed -->
+                        </div>
+                    </div>
+
+
+                    <!-- Ethical Hacking -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="resource-item">
+                            <img src="/img/about section AI.png" alt="Ethical Hacking YouTube Channels"
+                                class="img-fluid mb-3">
+                            <h3>Best YouTube Channels for Ethical Hacking:</h3>
+                            <p>
+                                <button id="Video-view"><a
+                                        href="https://www.youtube.com/channel/UC0ZTPkdxlAKf-V33tqXwi3Q">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫HackerSploit</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a
+                                        href="https://www.youtube.com/channel/UCgTNupxATBfWmfehv21ym-g">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Null Byte</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/Hak5Darren">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Hak5</b>
+                            </p>
+                            <!-- Add more as needed -->
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- Digital Marketing -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="resource-item">
+                            <img src="/img/about section AI.png" alt="Digital Marketing YouTube Channels"
+                                class="img-fluid mb-3">
+                            <h3>Best YouTube Channels for Digital Marketing:</h3>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/neilvkpatel">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Neil Patel</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/GaryVaynerchuk">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫GaryVee</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/backlinko">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Backlinko</b>
+                            </p>
+                            <!-- Add more as needed -->
+                        </div>
+                    </div>
+
+
+
+                    <!-- Data Structures and Algorithms (DSA) -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="resource-item">
+                            <img src="/img/about section AI.png" alt="DSA YouTube Channels"
+                                class="img-fluid mb-3">
+                            <h3>Best YouTube Channels for Data Structures and Algorithms (DSA):</h3>
+                            <p>
+                                <button id="Video-view"><a
+                                        href="https://www.youtube.com/user/ProgrammingWithBasics">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Abdul Bari</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/geeksforgeeksvideos">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫GeeksforGeeks</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/mycodeschool">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫mycodeschool</b>
+                            </p>
+                            <!-- Add more as needed -->
+                        </div>
+                    </div>
+
+                    <!-- Cloud Computing -->
+                    <!-- Cloud Computing -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="resource-item">
+                            <img src="/img/about section AI.png" alt="Cloud Computing YouTube Channels"
+                                class="img-fluid mb-3">
+                            <h3>Best YouTube Channels for Cloud Computing:</h3>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/googlecloudplatform">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Google Cloud Platform</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/AmazonWebServices">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫AWS Online Tech Talks</b>
+                            </p>
+                            <p>
+                                <button id="Video-view"><a href="https://www.youtube.com/user/windowsazure">View
+                                        Now</a></button><i class="fa fa-eye"></i>
+                                <b class="youtuber-name-in-style">👨‍🏫Microsoft Azure</b>
+                            </p>
+                            <!-- Add more as needed -->
+
+
+
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section-header">
+                <h1> Join ADV SparkTech Club for a journey of learning, collaboration, and innovation in the tech
+                    world.
+                </h1>
+                <div class="position-relative mt-4">
+                    <img src="/img/abo.png" class="img-fluid rounded-4" alt="">
+                </div>
+           
+            <a href="https://t.me/advindiancoder" class="btn">Join Now <span class="free-label">For latest
+                    Update</span></a>
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+
+
+    <!-- START SECTION 9 - THE FOOTER   -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- CONTENT FOR THE MOBILE NUMBER  -->
+                <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+                    <div class="contact-box__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call"
+                            viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                            <path d="M15 7a2 2 0 0 1 2 2" />
+                            <path d="M15 3a6 6 0 0 1 6 6" />
+                        </svg>
+                    </div>
+                    <div class="contact-box__info">
+                        <a href="#" class="contact-box__info--title">+91 9998884447</a>
+                        <p class="contact-box__info--subtitle"> Mon-Fri 9am-6pm</p>
+                    </div>
+                </div>
+                <!-- CONTENT FOR EMAIL  -->
+                <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+                    <div class="contact-box__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-opened"
+                            viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <polyline points="3 9 12 15 21 9 12 3 3 9" />
+                            <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                            <line x1="3" y1="19" x2="9" y2="13" />
+                            <line x1="15" y1="13" x2="21" y2="19" />
+                        </svg>
+                    </div>
+                    <div class="contact-box__info">
+                        <a href="#" class="contact-box__info--title">info@advsparktech.com</a>
+                        <p class="contact-box__info--subtitle">Online support</p>
+                    </div>
+                </div>
+                <!-- CONTENT FOR LOCATION  -->
+                <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+                    <div class="contact-box__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2"
+                            viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <line x1="18" y1="6" x2="18" y2="6.01" />
+                            <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5" />
+                            <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
+                            <line x1="9" y1="4" x2="9" y2="17" />
+                            <line x1="15" y1="15" x2="15" y2="20" />
+                        </svg>
+                    </div>
+                    <div class="contact-box__info">
+                        <a href="#" class="contact-box__info--title">India</a>
+                        <p class="contact-box__info--subtitle">Chapra, Bihar, Pin 841417</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- START THE SOCIAL MEDIA CONTENT  -->
+        <div class="footer-sm" style="background-color: #212121;">
+            <div class="container">
+                <div class="row py-4 text-center text-white">
+                    <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+                        connect with us on social media
+                    </div>
+                    <div class="col-lg-7 col-md-6">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- START THE CONTENT FOR THE CAMPANY INFO -->
+        <div class="container mt-5">
+            <div class="row text-white justify-content-center mt-3 pb-3">
+
+                <div class="col-12 col-sm-6 col-lg-6 mx-auto">
+                    <h5 class="text-capitalize fw-bold">ADV SparkTech Club</h5>
+                    <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
+                    <p class="lh-lg">
+                        ADV SparkTech Club is a vibrant community dedicated to fostering innovation, enhancing skills,
+                        and building
+                        a strong network among tech enthusiasts. Our goal is to support the professional and personal
+                        growth of our
+                        members by offering diverse programs and initiatives!
+
+                    <div class="creadential-section">
+                        <h3 class="creadential-heading">Our Accreditations</h3>
+                        <div class="creadential">
+                            <ul>
+                                <li><img src="images/iso.jpg" alt="Accreditation Logo 1"></li>
+                                <li><img src="images/ms (1).jpg" alt="Accreditation Logo 2"></li>
+                                <li><img src="images/banner/q.jpg" alt="Accreditation Logo 3"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+                    <h5 class="text-capitalize fw-bold">Products</h5>
+                    <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
+                    <ul class="list-inline campany-list">
+                        <li><a href="#">Coding Competitions</a></li>
+                        <li><a href="#">Hackathons</a></li>
+                        <li><a href="#">Ideathons</a></li>
+                        <li><a href="#">Workshops</a></li>
+                        <li><a href="#">Webinars</a></li>
+                        <li><a href="#">Mentorship Programs</a></li>
+                        <li><a href="#">Networking Events</a></li>
+                        <li><a href="#">Soft Skills Training</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+                    <h5 class="text-capitalize fw-bold">useful links</h5>
+                    <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#services">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#testimonials">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#faq">Programs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Career Opportunities</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Login/Register</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+                    <h5 class="text-capitalize fw-bold">Our Affiliates</h5>
+                    <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
+                    <ul class="list-inline campany-list">
+                        <li><a href="#">ADV Indian Coder</a></li>
+                        <li><a href="#">ADV SparkTech Club</a></li>
+                        <li><a href="#">ADV HopeHaven</a></li>
+                        <li><a href="#">Inoglle IT Services and Consulting</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- START THE COPYRIGHT INFO  -->
+        <div class="footer-bottom pt-5 pb-5">
+            <div class="container">
+                <div class="row text-center text-white">
+                    <div class="col-12">
+                        <div class="footer-bottom__copyright">
+                            &COPY; Copyright 2024 <a href="#">ADVindiancoder</a> | Created by <a
+                                href="http://advindiancoder.com" target="_blank">Team ADV Indian Coder</a><br><br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON  -->
+    <a href="#" class="shadow btn-primary rounded-circle back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+
+
+
+    <script src="assets/vendors/js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+        const lightbox = GLightbox({
+            'touchNavigation': true,
+            'href': 'https://www.youtube.com/watch?v=J9lS14nM1xg',
+            'type': 'video',
+            'source': 'youtube', //vimeo, youtube or local
+            'width': 900,
+            'autoPlayVideos': 'true',
+        });
+
+    </script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
