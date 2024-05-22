@@ -9,6 +9,18 @@
     margin-bottom: 30px;
     margin-left: -25px;
 }
+.card h2{
+    font-size: 3vw; /* Font size using viewport width unit */
+    color: transparent; /* Make the text transparent */
+    margin-bottom: 3vw; /* Margin using viewport width unit */
+    text-align: center;
+    text-shadow: 0.5vw 0.5vw 1vw rgba(1, 5, 8, 0.254); /* Text shadow using viewport width unit */
+    background-image: url('/images/international.png'); /* Replace 'your_image.jpg' with the path to your image */
+    background-size: cover; /* Ensure the background image covers the entire element */
+    background-position: center; /* Center the background image */
+    -webkit-background-clip: text; /* Clip the background image to the text */
+    background-clip: text; /* Clip the background image to the text */
+}
 
 /* Card title styles */
 .card-title {
@@ -129,8 +141,8 @@
     color: transparent; /* Make the text transparent */
     margin-bottom: 3vw; /* Margin using viewport width unit */
     text-align: center;
-    text-shadow: 0.5vw 0.5vw 1vw rgba(0, 0, 0, 0.62); /* Text shadow using viewport width unit */
-    background-image: url('/images/banner/ADV\ SparkTech\ Club.png'); /* Replace 'your_image.jpg' with the path to your image */
+    text-shadow: 0.5vw 0.5vw 1vw rgba(1, 5, 8, 0.254); /* Text shadow using viewport width unit */
+    background-image: url('/images/international.png'); /* Replace 'your_image.jpg' with the path to your image */
     background-size: cover; /* Ensure the background image covers the entire element */
     background-position: center; /* Center the background image */
     -webkit-background-clip: text; /* Clip the background image to the text */
@@ -149,23 +161,29 @@
     }
 }
 
-/* Image styles */
 #vinaykumarmahato img {
     display: block;
     margin: 0 auto;
-    max-width: 100%;
-    height: auto;
+    max-height: 1000%; /* Yaha par max-height set kiya gaya hai */
+    width: auto; /* Aur width ko auto rakha gaya hai */
     margin-bottom: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(153, 13, 88, 0.402);
 }
+
 
 /* Subheading styles */
 #vinaykumarmahato h2 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 2.5vw; /* Font size using viewport width unit */
+    color: transparent; /* Make the text transparent */
+    margin-bottom: 3vw; /* Margin using viewport width unit */
     text-align: center;
+    text-shadow: 0.5vw 0.5vw 1vw rgba(1, 5, 8, 0.254); /* Text shadow using viewport width unit */
+    background-image: url('/images/CodeCrafters\ Cup\ Challenge.png'); /* Replace 'your_image.jpg' with the path to your image */
+    background-size: cover; /* Ensure the background image covers the entire element */
+    background-position: center; /* Center the background image */
+    -webkit-background-clip: text; /* Clip the background image to the text */
+    background-clip: text; /* Clip the background image to the text */
 }
 
 /* Paragraph styles */
@@ -180,6 +198,7 @@
 #vinaykumarmahato ul {
     list-style-type: none;
     margin-bottom: 20px;
+    margin-left: -30px;
 }
 
 /* List item styles */
@@ -231,3 +250,41 @@
         font-size: 0.9em;
     }
 }
+
+
+
+
+
+
+
+
+
+#regbyvinay {
+    display: block;
+    width: 163px;
+    margin: 20px auto 0;
+    background-color: var(--bs-yellow);
+    color: #fff;
+    text-align: center;
+    padding: 2px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+#regbyvinay:hover {
+    background-color: #000101;
+}
+
+
+#reg {
+    text-align: center; /* Center align the paragraph */
+    font-size: 1.2em; /* Adjust font size */
+    line-height: 1.6; /* Adjust line height for readability */
+    max-width: 800px; /* Set maximum width to prevent stretching on larger screens */
+    margin: 0 auto; /* Center the paragraph horizontally */
+}
+
+
+
