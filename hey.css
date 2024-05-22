@@ -7,7 +7,7 @@
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9; /* Light background color */
+    background-color:rgba(0, 0, 0, 0.15); /* Light background color */
 }
 
 /* Slide Track */
@@ -19,11 +19,11 @@
 
 /* Individual Slides */
 .slider-container-vinay .slide {
-    min-width: 150px; /* Adjust size as needed */
-    margin: 10px;
+    min-width: 80px; /* Adjust size as needed */
+    margin: 1px;
     padding: 10px;
     background: #fff;
-    border-radius: 50%;
+    border-radius: 350%;
     box-shadow: 0 4px 6px rgba(7, 5, 5, 0.288);
     display: flex;
     justify-content: center;
