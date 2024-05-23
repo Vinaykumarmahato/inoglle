@@ -78,237 +78,140 @@
 
     </div>
    <main>
-
 <style>
-    /* Reset and General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    /* Testimonials Section */
+#testimonials-adv-spark-tech-club {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+  text-align: center;
 }
 
-
-
-body {
-    color: #000;
-
-    font-family: 'Roboto', sans-serif;
-    /* background-color: #f9f9f9;
-    color: #333; */
-    line-height: 1.6;
+#testimonials-adv-spark-tech-club .section-title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
 }
 
-a {
-    text-decoration: none;
-    color: #fff;
+#testimonials-adv-spark-tech-club .testimonial {
+  margin-bottom: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: left;
 }
 
-/* Main Content Section */
-.main-content-ADV-SparkT {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-    
+#testimonials-adv-spark-tech-club .testimonial-content {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
 }
 
-
-/* Blog Content */
-.large-9.columns {
-    width: 65%;
+#testimonials-adv-spark-tech-club .testimonial-author {
+  display: flex;
+  align-items: center;
 }
 
-/* Sidebar */
-.large-3.columns {
-    width: 30%;
+#testimonials-adv-spark-tech-club .testimonial-author img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 4px solid #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Sidebar Categories */
-.ui.secondary.vertical.pointing.menu {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+#testimonials-adv-spark-tech-club .author-info {
+  font-size: 16px;
+  color: #777;
+}
+
+#testimonials-adv-spark-tech-club .author-name {
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+#testimonials-adv-spark-tech-club .author-role {
+  font-style: italic;
+  color: #555;
+}
+
+/* Responsive Styling */
+@media (max-width: 991.98px) {
+  #testimonials-adv-spark-tech-club .testimonial-author img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #testimonials-adv-spark-tech-club .testimonial {
     padding: 20px;
-    background: linear-gradient(to right, rgba(130, 199, 237, 0.95), rgba(209, 34, 227, 0.95));
+  }
 
-}
-
-.ui.secondary.vertical.pointing.menu a {
-    display: block;
-    padding: 10px 0;
-    color: #fef9f9;
-    font-weight: bold;
-    
-}
-
-/* .ui.secondary.vertical.pointing.menu a.active.item {
-    color: #f3f4f5;n
-    
-}
-
-/* Recent and Popular Posts */
-.ui.vertical.menu {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    background: linear-gradient(to right, rgba(124, 249, 67, 0.95), rgba(209, 34, 227, 0.95));
-
-} */
-
-.ui.vertical.menu .item {
-    padding: 10px 0;
-}
-
-.ui.vertical.menu .item h6 {
-    margin-top: 0;
+  #testimonials-adv-spark-tech-club .testimonial-content {
     font-size: 16px;
-    font-weight: bold;
-}
+  }
 
-/* Button Styles */
-.button {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+  #testimonials-adv-spark-tech-club .author-info {
+    font-size: 14px;
+  }
 
-.button:hover {
-    background-color: #0056b3;
-}
-
-/* Footer */
-.page-footer-bottom {
-    background-color: #8af122;
-    color: #3cc0f4;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.page-footer-bottom a {
-    color: #fff;
-}
-
-/* Responsive Adjustments */
-@media screen and (max-width: 992px) {
-    .main-content {
-        flex-direction: column;
-    }
-
-    .large-9.columns, .large-3.columns {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+  #testimonials-adv-spark-tech-club .testimonial-author img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
 }
 
 </style>
-<!-- Main Content Section -->
-<section class="main-content-ADV-SparkT">
-    <div class="content-wrapper">
-        <!-- Main Page Content and Sidebar -->
-        <div class="row">
-            <!-- Main Blog Content -->
-            <div class="large-9 columns" role="content">
-               
-
-                <article>
-                    <h1>Demystifying Artificial Intelligence: Understanding the Basics</h1>
-                    <p class="article_pub-date">Published
-                        <time datetime="2024-05-23" pubdate="">May 23, 2024</time>
-                    </p>
-                    <p>Artificial Intelligence (AI) is transforming industries and reshaping the way we interact with technology. In this article, we'll break down the fundamentals of AI, including machine learning, neural networks, and natural language processing. We'll explore how AI systems learn from data, make predictions, and solve complex tasks, providing insights into the underlying algorithms and techniques.</p>
-                    <p>Whether you're new to AI or looking to deepen your understanding, this article will serve as a comprehensive introduction to the field, covering key concepts and terminology essential for navigating the world of artificial intelligence.</p>
-                    <a href="#" class="button">Read More</a>
-                </article>
-                <hr />
-                <article>
-                    <h1>The Role of Artificial Intelligence in Business Transformation</h1>
-                    <p class="article_pub-date">Published
-                        <time datetime="2024-05-23" pubdate="">May 23, 2024</time>
-                    </p>
-                    <p>Artificial Intelligence (AI) is driving digital transformation across industries, enabling businesses to unlock new opportunities and improve efficiency. In this article, we'll explore how AI technologies such as predictive analytics, recommendation systems, and autonomous decision-making are reshaping business processes and driving innovation.</p>
-                    <p>We'll delve into real-world use cases of AI in areas such as customer service, marketing, finance, and healthcare, demonstrating how organizations can leverage AI to gain a competitive edge and deliver value to customers. Whether you're a business leader, entrepreneur, or technology enthusiast, understanding the role of AI in business transformation is essential for staying ahead in today's digital economy.</p>
-                    <a href="#" class="button">Read More</a>
-                </article>
-                <hr />
-                <article>
-                    <h1>Ethical Considerations in Artificial Intelligence: Ensuring Responsible AI Development and Deployment</h1>
-                    <p class="article_pub-date">Published
-                        <time datetime="2024-05-23" pubdate="">May 23, 2024</time>
-                    </p>
-                    <p>As artificial intelligence (AI) becomes increasingly integrated into our daily lives, it's essential to consider the ethical implications of AI development and deployment. In this article, we'll explore key ethical considerations surrounding AI, including fairness, transparency, accountability, and bias.</p>
-                    <p>We'll discuss real-world examples of AI bias and discrimination, highlighting the importance of ensuring AI systems are designed and deployed ethically. We'll also examine frameworks and guidelines for responsible AI development, providing insights into how organizations can mitigate ethical risks and promote trust in AI technologies.</p>
-                    <a href="#" class="button">Read More</a>
-                </article>
-                <hr />
-                <article>
-                    <h1>The Future of Artificial Intelligence: Trends and Predictions</h1>
-                    <p class="article_pub-date">Published
-                        <time datetime="2024-05-23" pubdate="">May 23, 2024</time>
-                    </p>
-                    <p>Artificial Intelligence (AI) continues to advance at a rapid pace, shaping the future of technology and society. In this article, we'll explore the latest trends and predictions in AI, from advancements in deep learning and reinforcement learning to the rise of AI-powered autonomous systems.</p>
-                    <p>We'll discuss how AI is expected to impact various industries, including healthcare, finance, transportation, and entertainment, and explore the potential benefits and challenges of widespread AI adoption. Whether you're a technologist, researcher, or enthusiast, understanding the future of artificial intelligence is essential for preparing for the opportunities and challenges ahead.</p>
-                    <a href="#" class="button">Read More</a>
-                </article>
-                
-                
+    <!-- Testimonials Section -->
+<section id="testimonials-adv-spark-tech-club" class="section testimonials">
+    <div class="container">
+        <h2 class="section-title" id="title-adv-spark-tech">Testimonials</h2>
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <p>"I had an amazing experience with ADV SparkTech Club! The workshops were insightful and helped me enhance my skills. Highly recommended!"</p>
             </div>
-            <!-- End Main Content -->
-            <!-- Sidebar -->
-            <aside class="large-3 columns" id="adv-spark">
-                <h5 id="ADV">Categories</h5>
-                <div class="ui secondary vertical pointing menu">
-                    <a href="blog.html" class="item">Technology Trends</a>
-                    <a href="softwaredevelopment.html" class="item">Software Development</a>
-                    <a href="artificialIntelligenge.html" class="item">Artificial Intelligence</a>
-                    <a href="datascience.html" class="item">Data Science</a>
-                    <a href="webdevelopment.html" class="item">Web Development</a>
-                    <a href="mobileAppDev.html" class="item">Mobile App Development</a>
-                    <a href="cybersecurit.html" class="item">Cybersecurity</a>
-                    <a href="cloudecomputing.html" class="item">Cloud Computing</a>
-                    <a href="IOT.html" class="item">Internet of Things (IoT)</a>
-                    <a href="machinelearning.html" class="item">Machine Learning</a>
-                    <a href="robotics.html" class="item">Robotics</a>
-                    <a href="VRAR.html" class="item">Virtual Reality (VR) and Augmented Reality (AR)</a>
-                    <a href="Gaming.html" class="item">Gaming</a>
-                    <a href="DigitalMarketing.html" class="item">Digital Marketing</a>
-                    <a href="TechReviewAndAnalysis.html" class="item">Tech Reviews and Analysis</a>
+            <div class="testimonial-author" id="adv-sparktech">
+                <img src="testimonial1.jpg" alt="John Doe">
+                <div class="author-info">
+                    <p class="author-name">John Doe</p>
+                    <p class="author-role">Web Developer</p>
                 </div>
-                
-                <div class="ui vertical menu">
-                    <div class="header item">
-                        <i class="icon-page"></i>
-                        Recent Posts
-                    </div>
-                    <div class="item">
-                        <a href="#"><h6>Pork Sausage News!</h6> <p>Pork sausages health benefits proved by government...</p></a>
-                    </div>
-                    <div class="item">
-                        <a href="#"><h6>More Amazing Pork Sausage News!</h6> <p>Pork sausages better than viagra...</p></a>
-                    </div>
-                </div>
-                <div class="ui vertical menu">
-                    <div class="header item">
-                        <i class="icon-page"></i>
-                        Popular Posts
-                    </div>
-                    <div class="item">
-                        <a href="#"><h6>Pork Sausage News!</h6> <p>Pork sausages health benefits proved by government...</p></a>
-                    </div>
-                    <div class="item">
-                        <a href="#"><h6>More Amazing Pork Sausage News!</h6> <p>Pork sausages better than viagra...</p></a>
-                    </div>
-                </div>
-            </aside>
-            <!-- End Sidebar -->
+            </div>
         </div>
-        <!-- End Main Content and Sidebar -->
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <p>"Joining ADV SparkTech Club was one of the best decisions I made. The mentorship program provided valuable guidance and support throughout my journey."</p>
+            </div>
+            <div class="testimonial-author">
+                <img src="testimonial2.jpg" alt="Jane Smith">
+                <div class="author-info">
+                    <p class="author-name">Jane Smith</p>
+                    <p class="author-role">Data Scientist</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <p>"The events organized by ADV SparkTech Club are not only informative but also a lot of fun! I met like-minded individuals and expanded my network."</p>
+            </div>
+            <div class="testimonial-author">
+                <img src="testimonial3.jpg" alt="Michael Johnson">
+                <div class="author-info">
+                    <p class="author-name">Michael Johnson</p>
+                    <p class="author-role">Mobile App Developer</p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+
 
 
   
@@ -507,6 +410,28 @@ a {
     </script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Get the Apply Now button
+    var applyButton = document.querySelector('.btn-submit');
+
+    // Add click event listener to the Apply Now button
+    applyButton.addEventListener('click', function(event) {
+        // Prevent the default form submission behavior
+        event.preventDefault();
+
+        // Create the email link with pre-filled subject and body
+        var emailLink = 'mailto:advsparktech@gmail.com?subject=Campus Ambassador Application&body=Dear ADV Sparktech Club,%0D%0A%0D%0AI am interested in applying for the Campus Ambassador Program. Please find my details below:%0D%0A%0D%0AName:%0D%0AEmail:%0D%0ACollege/University:%0D%0AYear of Study:%0D%0AMajor:%0D%0A%0D%0AThank you!%0D%0A%0D%0A';
+
+        // Open the user's email client with the pre-filled email
+        window.location.href = emailLink;
+
+        // Show prompt message
+        alert('Thank you for clicking on the "Apply Now" button. Please send the email from your mail client.');
+    });
+});
+
+    </script>
 
 </body>
 
