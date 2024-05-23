@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/coding_challenge.css">
+    <link rel="stylesheet" href="hey.css">
 </head>
 
 <body>
@@ -52,11 +52,11 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLinks" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Useful Links</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownLinks">
-
+                           
                             <li><a class="dropdown-item" href="/index.html#what-we-offer">Programs</a></li>
                             <li><a class="dropdown-item" href="#">Join Us</a></li>
                             <li><a class="dropdown-item" href="#">Career Opportunities</a></li>
-                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
                             <li><a class="dropdown-item" href="/Resource.html">Resources</a></li>
                             <li><a class="dropdown-item" href="#">Gallery</a></li>
                             <li><a class="dropdown-item" href="/index.html#faq">FAQ</a></li>
@@ -64,6 +64,7 @@
                             <li><a class="dropdown-item" href="/index.html#contact">Contact Us</a></li>
                             <li><a class="dropdown-item" href="#">Testimonials</a></li>
                             <li><a class="dropdown-item" href="#">Privacy Policy and Terms of Use</a></li>
+                            
                         </ul>
                     </li>
                 </ul>
@@ -80,188 +81,244 @@
         </div>
 
     </div>
-    <style>
+   <main>
 
-    </style>
-
-    <main>
-
-
-
-
-
-
-        <!-- <section id="coding-challenges" class="section-vinay">
-            <div class="container-challenge">
-                <h1>Welcome to our Coding Challenges! Join us for diverse challenges designed to test and improve your coding skills, suitable for beginners and experienced coders alike.</h1>
-
-        </section> -->
+<style>
+    /* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
-        <section id="vinaykumarmahato">
-            <h1>International Hackathon - CodeCraft</h1>
-            <div style="text-align: center;">
-                <img src="/images/Designer (2).png" alt="Hackathon Image" style="max-width: 100%; height: auto;">
-            </div>
-            <h2 id="event-overview">Event Overview</h2>
-            <p id=" event-overview-ADV-sparkTech-Club-vinay-kumar">Welcome to the International Hackathon - CodeCraft
-                organized by ADV SparkTech! This event aims to challenge participants to replicate a given design using
-                HTML, CSS, React, or any other programming languages. The competition will test the participants' coding
-                skills, creativity, and speed.</p>
 
-            <h2 id="prize-overview">Prizes</h2>
-            <ul>
-                <li><strong>First Prize</strong>: ₹2999 cash prize, T-shirt swag, keyboard, and mouse</li>
-                <li><strong>Second Prize</strong>: To be announced</li>
-                <li><strong>Third Prize</strong>: To be announced</li>
-                <li><strong>Participation Certificates</strong>: All participants</li>
-                <li><strong>Excellence Certificates</strong>: Winners</li>
-            </ul>
+body {
+    color: #000;
 
-            <h2 id="event-details-overew">Event Details</h2>
-            <p><strong>Mode</strong>: Online</p>
-            <p><strong>Date</strong>: To be announced</p>
-            <p><strong>Time</strong>: To be announced</p>
-            <p><strong>Venue for Prize Distribution</strong>: DSCET Mamallapuram 603104 Campus <a href="https://www.bing.com/maps?osid=3af3e0a3-49a1-4347-bcde-66d2278cef30&cp=12.6243~80.181656&lvl=16&pi=0&imgid=e0776f95-d571-44dd-8801-1921c2d37a62&v=2&sV=2&form=S00027">( View on Map )</a></p>
+    font-family: 'Roboto', sans-serif;
+    /* background-color: #f9f9f9;
+    color: #333; */
+    line-height: 1.6;
+}
 
-            <h2 id="org">Organizer</h2>
-            <p>This event is under the ADV SparkTech, affiliated with ADV Indian Coder, and includes ADV HopeHaven and
-                Inoglle IT Services.</p>
+a {
+    text-decoration: none;
+    color: #fff;
+}
 
-            <h2>Rules and Guidelines</h2>
-            <ul>
-                <li><strong>Registration</strong>: Open to all students internationally.</li>
-                <li><strong>Task</strong>: Replicate the given design using HTML, CSS, React, or any other programming
-                    concepts.</li>
-                <li><strong>Submission</strong>: The first three participants to complete and submit their designs will
-                    be the winners.</li>
+/* Main Content Section */
+.main-content-ADV-SparkT {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    
+}
+
+
+/* Blog Content */
+.large-9.columns {
+    width: 65%;
+}
+
+/* Sidebar */
+.large-3.columns {
+    width: 30%;
+}
+
+/* Sidebar Categories */
+.ui.secondary.vertical.pointing.menu {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background: linear-gradient(to right, rgba(130, 199, 237, 0.95), rgba(209, 34, 227, 0.95));
+
+}
+
+.ui.secondary.vertical.pointing.menu a {
+    display: block;
+    padding: 10px 0;
+    color: #fef9f9;
+    font-weight: bold;
+    
+}
+
+/* .ui.secondary.vertical.pointing.menu a.active.item {
+    color: #f3f4f5;n
+    
+}
+
+/* Recent and Popular Posts */
+.ui.vertical.menu {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background: linear-gradient(to right, rgba(124, 249, 67, 0.95), rgba(209, 34, 227, 0.95));
+
+} */
+
+.ui.vertical.menu .item {
+    padding: 10px 0;
+}
+
+.ui.vertical.menu .item h6 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.page-footer-bottom {
+    background-color: #8af122;
+    color: #3cc0f4;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.page-footer-bottom a {
+    color: #fff;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 992px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .large-9.columns, .large-3.columns {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+</style>
+<!-- Main Content Section -->
+<section class="main-content-ADV-SparkT">
+    <div class="content-wrapper">
+        <!-- Main Page Content and Sidebar -->
+        <div class="row">
+            <!-- Main Blog Content -->
+            <div class="large-9 columns" role="content">
+               
+
+                <article>
+                    <h1>Demystifying Artificial Intelligence: Understanding the Basics</h1>
+                    <p class="article_pub-date">Published
+                        <time datetime="2024-05-23" pubdate="">May 23, 2024</time>
+                    </p>
+                    <p>Artificial Intelligence (AI) is transforming industries and reshaping the way we interact with technology. In this article, we'll break down the fundamentals of AI, including machine learning, neural networks, and natural language processing. We'll explore how AI systems learn from data, make predictions, and solve complex tasks, providing insights into the underlying algorithms and techniques.</p>
+                    <p>Whether you're new to AI or looking to deepen your understanding, this article will serve as a comprehensive introduction to the field, covering key concepts and terminology essential for navigating the world of artificial intelligence.</p>
+                    <a href="#" class="button">Read More</a>
+                </article>
+                <hr />
+                <article>
+                    <h1>The Role of Artificial Intelligence in Business Transformation</h1>
+                    <p class="article_pub-date">Published
+                        <time datetime="2024-05-23" pubdate="">May 23, 2024</time>
+                    </p>
+                    <p>Artificial Intelligence (AI) is driving digital transformation across industries, enabling businesses to unlock new opportunities and improve efficiency. In this article, we'll explore how AI technologies such as predictive analytics, recommendation systems, and autonomous decision-making are reshaping business processes and driving innovation.</p>
+                    <p>We'll delve into real-world use cases of AI in areas such as customer service, marketing, finance, and healthcare, demonstrating how organizations can leverage AI to gain a competitive edge and deliver value to customers. Whether you're a business leader, entrepreneur, or technology enthusiast, understanding the role of AI in business transformation is essential for staying ahead in today's digital economy.</p>
+                    <a href="#" class="button">Read More</a>
+                </article>
+                <hr />
+                <article>
+                    <h1>Ethical Considerations in Artificial Intelligence: Ensuring Responsible AI Development and Deployment</h1>
+                    <p class="article_pub-date">Published
+                        <time datetime="2024-05-23" pubdate="">May 23, 2024</time>
+                    </p>
+                    <p>As artificial intelligence (AI) becomes increasingly integrated into our daily lives, it's essential to consider the ethical implications of AI development and deployment. In this article, we'll explore key ethical considerations surrounding AI, including fairness, transparency, accountability, and bias.</p>
+                    <p>We'll discuss real-world examples of AI bias and discrimination, highlighting the importance of ensuring AI systems are designed and deployed ethically. We'll also examine frameworks and guidelines for responsible AI development, providing insights into how organizations can mitigate ethical risks and promote trust in AI technologies.</p>
+                    <a href="#" class="button">Read More</a>
+                </article>
+                <hr />
+                <article>
+                    <h1>The Future of Artificial Intelligence: Trends and Predictions</h1>
+                    <p class="article_pub-date">Published
+                        <time datetime="2024-05-23" pubdate="">May 23, 2024</time>
+                    </p>
+                    <p>Artificial Intelligence (AI) continues to advance at a rapid pace, shaping the future of technology and society. In this article, we'll explore the latest trends and predictions in AI, from advancements in deep learning and reinforcement learning to the rise of AI-powered autonomous systems.</p>
+                    <p>We'll discuss how AI is expected to impact various industries, including healthcare, finance, transportation, and entertainment, and explore the potential benefits and challenges of widespread AI adoption. Whether you're a technologist, researcher, or enthusiast, understanding the future of artificial intelligence is essential for preparing for the opportunities and challenges ahead.</p>
+                    <a href="#" class="button">Read More</a>
+                </article>
                 
-                <li><strong>Tools Allowed</strong>: Participants may use any development tools or libraries they prefer.
-                </li>
-                <li><strong>Support</strong>: A support team will be available to assist with any technical difficulties
-                    during the event.</li>
-
-
-                   
-            </ul>
-
-            <h2 id="time">Timeline</h2>
-            <p><strong>Registration Opens</strong>: To be announced</p>
-            <p><strong>Registration Closes</strong>: To be announced</p>
-            <p><strong>Hackathon Date</strong>: To be announced</p>
-            <p><strong>Submission Deadline</strong>: End of the hackathon</p>
-
-            <h2>Registration</h2>
-            <p id="reg">Unlock Your Potential. Register now to embark on an adventure of growth and innovation. <a
-                    href="/reg.html.html" class="btn btn-primary" id="regbyvinay">Register Now</a>.</p>
-
-
-            <h2>Contact Information</h2>
-            <p><strong>Email</strong>: contact@advsparktech.com</p>
-            <p><strong>Phone</strong>: +91-XXXXXXXXXX</p>
-        </section>
-
-        <!-- Past Challenges -->
-        <div class="card">
-            <h2 class="card-title">Past Challenges</h2>
-            <ul class="challenge-list">
-                <li class="challenge-item">
-                    <img src="/images/paper pre.png" alt="DevQuest Challenge">
-                    <div class="challenge-info">
-                        <h3 class="challenge-name">DevQuest Challenge</h3>
-                        <p class="challenge-date">Date: August 15, 2023</p>
-                        <p class="challenge-description">The DevQuest Challenge, held on August 15, 2023, was a
-                            thrilling journey into the world of coding and problem-solving. Participants engaged
-                            in a series of intriguing coding puzzles and challenges, pushing their skills to the
-                            limit. From algorithmic challenges to real-world application development tasks,
-                            contestants showcased their creativity and technical prowess. It was a day filled
-                            with excitement, camaraderie, and learning as participants navigated through complex
-                            problems and emerged victorious.</p>
+                
+            </div>
+            <!-- End Main Content -->
+            <!-- Sidebar -->
+            <aside class="large-3 columns" id="adv-spark">
+                <h5 id="ADV">Categories</h5>
+                <div class="ui secondary vertical pointing menu">
+                    <a href="blog.html" class="item">Technology Trends</a>
+                    <a href="softwaredevelopment.html" class="item">Software Development</a>
+                    <a href="artificialIntelligenge.html" class="item">Artificial Intelligence</a>
+                    <a href="datascience.html" class="item">Data Science</a>
+                    <a href="webdevelopment.html" class="item">Web Development</a>
+                    <a href="mobileAppDev.html" class="item">Mobile App Development</a>
+                    <a href="cybersecurit.html" class="item">Cybersecurity</a>
+                    <a href="cloudecomputing.html" class="item">Cloud Computing</a>
+                    <a href="IOT.html" class="item">Internet of Things (IoT)</a>
+                    <a href="machinelearning.html" class="item">Machine Learning</a>
+                    <a href="robotics.html" class="item">Robotics</a>
+                    <a href="VRAR.html" class="item">Virtual Reality (VR) and Augmented Reality (AR)</a>
+                    <a href="Gaming.html" class="item">Gaming</a>
+                    <a href="DigitalMarketing.html" class="item">Digital Marketing</a>
+                    <a href="TechReviewAndAnalysis.html" class="item">Tech Reviews and Analysis</a>
+                </div>
+                
+                <div class="ui vertical menu">
+                    <div class="header item">
+                        <i class="icon-page"></i>
+                        Recent Posts
                     </div>
-                </li>
-                <li class="challenge-item">
-                    <img src="/images/ui ux.png" alt="Code Clash Tournament">
-                    <div class="challenge-info">
-                        <h3 class="challenge-name">Code Clash Tournament</h3>
-                        <p class="challenge-date">Date: November 7, 2023</p>
-                        <p class="challenge-description">On November 7, 2023, coding enthusiasts from around the
-                            globe gathered for the epic Code Clash Tournament. This adrenaline-fueled
-                            competition pitted programmers against each other in a battle of wits and coding
-                            expertise. With challenges ranging from algorithmic puzzles to software development
-                            projects, contestants faced intense coding challenges and raced against the clock to
-                            emerge victorious. The Code Clash Tournament was a testament to the passion and
-                            skill of the coding community, showcasing the power of collaboration and innovation
-                            in the world of technology.</p>
+                    <div class="item">
+                        <a href="#"><h6>Pork Sausage News!</h6> <p>Pork sausages health benefits proved by government...</p></a>
                     </div>
-                </li>
-                <li class="challenge-item">
-                    <img src="/images/technical quize.png" alt="Hackathon Heroes Challenge">
-                    <div class="challenge-info">
-                        <h3 class="challenge-name">Hackathon Heroes Challenge</h3>
-                        <p class="challenge-date">Date: March 12, 2023</p>
-                        <p class="challenge-description">The Hackathon Heroes Challenge, held on March 12, 2023,
-                            brought together the brightest minds in coding for an unforgettable day of
-                            innovation and creativity. Participants collaborated in teams to tackle real-world
-                            problems, developing innovative solutions and prototypes within a limited timeframe.
-                            From coding algorithms to designing user interfaces, contestants showcased their
-                            technical skills and problem-solving abilities. The Hackathon Heroes Challenge was a
-                            celebration of teamwork, ingenuity, and the limitless potential of technology to
-                            drive positive change.</p>
+                    <div class="item">
+                        <a href="#"><h6>More Amazing Pork Sausage News!</h6> <p>Pork sausages better than viagra...</p></a>
                     </div>
-                </li>
-                <li class="challenge-item">
-                    <img src="/images/byte battle.png" alt="Byte Battle Marathon">
-                    <div class="challenge-info">
-                        <h3 class="challenge-name">Byte Battle Marathon</h3>
-                        <p class="challenge-date">Date: September 30, 2023</p>
-                        <p class="challenge-description">The Byte Battle Marathon, held on September 30, 2023,
-                            was an epic showdown of coding prowess and determination. Participants embarked on a
-                            marathon coding session, facing a series of intense challenges and obstacles along
-                            the way. From debugging code to optimizing algorithms, contestants pushed themselves
-                            to their limits, demonstrating resilience and grit in the face of adversity. The
-                            Byte Battle Marathon was a test of endurance and skill, showcasing the unwavering
-                            commitment of coders to overcome any challenge that comes their way.</p>
+                </div>
+                <div class="ui vertical menu">
+                    <div class="header item">
+                        <i class="icon-page"></i>
+                        Popular Posts
                     </div>
-                </li>
-                <li class="challenge-item">
-                    <img src="/images/CodeCrafters Cup Challenge.png" alt="CodeCrafters Cup Challenge">
-                    <div class="challenge-info">
-                        <h3 class="challenge-name">CodeCrafters Cup Challenge</h3>
-                        <p class="challenge-date">Date: June 19, 2023</p>
-                        <p class="challenge-description">The CodeCrafters Cup Challenge, held on June 19, 2023,
-                            was a thrilling competition that brought together coding enthusiasts from across the
-                            globe. Participants competed in a series of coding challenges and puzzles, testing
-                            their skills in algorithmic problem-solving and software development. From beginners
-                            to seasoned coders, contestants faced a variety of challenges that pushed their
-                            limits and expanded their knowledge. The CodeCrafters Cup Challenge was a
-                            celebration of creativity, innovation, and the boundless possibilities of coding in
-                            today's digital age.</p>
+                    <div class="item">
+                        <a href="#"><h6>Pork Sausage News!</h6> <p>Pork sausages health benefits proved by government...</p></a>
                     </div>
-                </li>
-            </ul>
+                    <div class="item">
+                        <a href="#"><h6>More Amazing Pork Sausage News!</h6> <p>Pork sausages better than viagra...</p></a>
+                    </div>
+                </div>
+            </aside>
+            <!-- End Sidebar -->
         </div>
+        <!-- End Main Content and Sidebar -->
+    </div>
+</section>
 
 
-        <!-- How to Participate -->
-        <div class="card-ADV-Sparktech">
-            <h2 class="card-title-vinay">How to Participate</h2>
-            <ol class="participation-stepsADV-Sparktech">
-                <li id="ADV-Sparktech">Register for the challenge on our website.</li>
-                <li id="ADV-Sparktech">Join our coding challenge platform or coding environment (if applicable).</li>
-                <li id="ADV-Sparktech">Follow the challenge guidelines and rules provided.</li>
-                <li id="ADV-Sparktech">Submit your solution within the specified timeframe.</li>
-                <!-- Add any additional steps or instructions as needed -->
-            </ol>
-            <a href="/reg.html.html" class="btn btn-primary" id="regbyvinay">Register Now</a>
-        </div>
-        </div>
-        </section>
-    </main>
-
-
-
-
-
+  
+    
+   </main>
+   
 
     <!-- START SECTION 9 - THE FOOTER   -->
 
