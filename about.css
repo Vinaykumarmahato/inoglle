@@ -79,3 +79,141 @@
         padding: 6px 12px;
     }
 }
+/* Contact Section */
+#contact {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    background-image: url('path/to/background-image.jpg'); /* Add a background image */
+    background-size: cover;
+    background-position: center;
+}
+
+#contact .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background for contrast */
+    border-radius: 10px;
+}
+
+#contact h3 {
+    font-size: 28px; /* Increased font size */
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #007bff; /* Changed color to primary color */
+    text-transform: uppercase; /* Added uppercase transformation */
+    text-align: center; /* Center aligned */
+}
+
+#contact p {
+    margin-bottom: 10px;
+    font-size: 18px; /* Increased font size */
+    color: #555;
+    text-align: center; /* Center aligned */
+}
+
+#contact .info-item {
+    background: #fff;
+    padding: 25px; /* Increased padding */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center alignment */
+}
+
+#contact .info-item:hover {
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.2); /* Stronger hover effect */
+}
+
+#contact .info-item i {
+    font-size: 30px; /* Increased icon size */
+    color: #007bff;
+    margin-right: 15px;
+}
+
+#contact .php-email-form .form-control {
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: 16px; /* Increased font size */
+    border: 1px solid #ddd;
+}
+
+#contact .php-email-form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); /* Slightly stronger focus effect */
+}
+
+#contact .php-email-form button[type="submit"] {
+    background: #007bff;
+    border: 0;
+    padding: 12px 30px; /* Adjusted padding */
+    color: #fff;
+    transition: all 0.4s;
+    border-radius: 5px;
+    font-size: 16px; /* Increased font size */
+    cursor: pointer;
+}
+
+#contact .php-email-form button[type="submit"]:hover {
+    background: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    #contact .info-item {
+        padding: 20px;
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center text */
+    }
+
+    #contact .php-email-form .form-control {
+        font-size: 14px;
+    }
+
+    #contact .php-email-form button[type="submit"] {
+        padding: 10px 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    #contact {
+        padding: 40px 20px; /* Adjusted padding */
+    }
+
+    #contact h3 {
+        font-size: 24px;
+    }
+
+    #contact p {
+        font-size: 16px;
+    }
+
+    #contact .php-email-form .form-control {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    #contact {
+        padding: 30px 10px; /* Adjusted padding */
+    }
+
+    #contact h3 {
+        font-size: 20px;
+    }
+
+    #contact p {
+        font-size: 14px;
+    }
+
+    #contact .php-email-form .form-control {
+        font-size: 14px;
+    }
+
+    #contact .php-email-form button[type="submit"] {
+        padding: 8px 20px; /* Adjusted padding */
+        font-size: 14px; /* Adjusted font size */
+    }
+}
