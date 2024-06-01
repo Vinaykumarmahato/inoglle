@@ -531,5 +531,80 @@ option{
     padding: 2em 0 0em;
 }
 }
+/* Style for the section */
+#portfolio-adv-SparkTech {
+	padding: 60px 0;
+  }
+  
+  /* Style for the heading */
+  #portfolio-adv-SparkTech h1 {
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-transform: capitalize;
+  }
+  
+  /* Style for the lead paragraph */
+  #portfolio-adv-SparkTech p {
+	font-size: 1.25rem;
+	margin-bottom: 30px;
+  }
+  
+  /* Style for the filter buttons */
+  #portfolio-adv-SparkTech .btn-outline-primary {
+	font-size: 1rem;
+	margin-right: 10px;
+  }
+  
+ /* Section Styling */
+#portfolio-adv-SparkTech {
+	padding: 60px 0;
+  }
+  
+  /* Heading Styling */
+  #portfolio-adv-SparkTech h1 {
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+  }
+  
+  /* Lead Paragraph Styling */
+  #portfolio-adv-SparkTech p {
+	font-size: 1.25rem;
+	margin-bottom: 30px;
+  }
+  
+  /* Filter Buttons Styling */
+  #portfolio-adv-SparkTech .btn {
+	font-size: 1rem;
+	padding: 10px 20px;
+	margin-right: 10px;
+  }
+  
+  /* Link Styling for Filter Buttons */
+  #portfolio-adv-SparkTech .btn a {
+	color: inherit; /* Inherit text color */
+	text-decoration: none;
+  }
+  
+  /* Button Hover Effect */
+  #portfolio-adv-SparkTech .btn:hover {
+	transform: translateY(-2px); /* Move button slightly up on hover */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  /* Button Active State */
+  #portfolio-adv-SparkTech .btn.active {
+	background-color: #007bff; /* Change background color for active button */
+	color: #fff; /* Change text color for active button */
+  }
+  
+  /* Container for Filter Buttons */
+  #portfolio-adv-SparkTech .filter-buttons {
+	margin-bottom: 40px;
+  }
+  
 
+  
+  
 
