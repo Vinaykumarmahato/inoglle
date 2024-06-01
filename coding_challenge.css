@@ -222,7 +222,25 @@
         transform: translateY(0);
     }
 }
+/* Screen size between 800px and 1200px */
+@media (min-width: 800px) and (max-width: 1200px) {
+    .highlight-section {
+        max-width: 700px;
+        margin: 40px auto;
+        padding: 25px;
+        margin-left: 123px;
 
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    }
+
+    .highlight-section h3 {
+        font-size: 30px;
+    }
+
+    .highlight-section p {
+        font-size: 17px;
+    }
+}
 /* Responsive Design */
 @media (max-width: 991px) {
     .highlight-section {
