@@ -1,3 +1,208 @@
+/*--------------------------------------------------------------
+# About Us
+--------------------------------------------------------------*/
+.about-us .content {
+    padding: 30px 15px;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-us .content h3 {
+    font-weight: 700;
+    font-size: 34px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-us .content p {
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.about-us .content .icon-box {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.about-us .content .icon-box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about-us .content .icon-box h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 10px 20px;
+    flex-grow: 1;
+    color: #2c3e50;
+}
+
+.about-us .content .icon-box i {
+    font-size: 48px;
+    color: #f03c02;
+    margin-right: 20px;
+}
+
+.about-us .content .icon-box p {
+    font-size: 15px;
+    color: #90847f;
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+.about-us .image {
+    background: url("/images/Designer%20(2).png") center center no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.about-us .image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 991px) {
+    .about-us .content {
+        padding: 20px 10px;
+    }
+
+    .about-us .image {
+        text-align: center;
+        min-height: 300px;
+    }
+
+    .about-us .image::after {
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media (max-width: 667px) {
+    .about-us .content {
+        padding: 15px 5px;
+    }
+
+    .about-us .image {
+        min-height: 200px;
+    }
+
+    .about-us .content .icon-box {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .about-us .content .icon-box h4,
+    .about-us .content .icon-box p {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .about-us .content .icon-box i {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Highlight Section
+--------------------------------------------------------------*/
+.highlight-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.highlight-section h3 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.highlight-section h3::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #f03c02;
+    display: block;
+    margin: 10px auto;
+}
+
+.highlight-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .highlight-section {
+        padding: 15px;
+    }
+
+    .highlight-section h3 {
+        font-size: 28px;
+    }
+
+    .highlight-section p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 667px) {
+    .highlight-section {
+        padding: 10px;
+    }
+
+    .highlight-section h3 {
+        font-size: 24px;
+    }
+
+    .highlight-section p {
+        font-size: 14px;
+    }
+}
+
+
 
 
 /* Card styles */
