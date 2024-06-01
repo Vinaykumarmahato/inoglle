@@ -2,18 +2,14 @@
 # About Us
 --------------------------------------------------------------*/
 .about-us .content {
-    padding: 30px 15px;
-    line-height: 1.6;
-    color: #333;
-    max-width: 1200px;
-    margin: auto;
+    padding: 0;
 }
 
 .about-us .content h3 {
     font-weight: 700;
     font-size: 34px;
-    color: #2c3e50;
     margin-bottom: 20px;
+    color: #2c3e50;
     text-align: center;
 }
 
@@ -30,9 +26,9 @@
     align-items: center;
     padding: 15px;
     border-radius: 8px;
+    background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
-    background-color: #fff;
 }
 
 .about-us .content .icon-box:hover {
@@ -42,13 +38,13 @@
 .about-us .content .icon-box h4 {
     font-size: 20px;
     font-weight: 700;
-    margin: 0 0 10px 20px;
-    flex-grow: 1;
+    margin: 5px 0 10px 60px;
     color: #2c3e50;
 }
 
 .about-us .content .icon-box i {
     font-size: 48px;
+    float: left;
     color: #f03c02;
     margin-right: 20px;
 }
@@ -56,70 +52,122 @@
 .about-us .content .icon-box p {
     font-size: 15px;
     color: #90847f;
-    margin-left: 20px;
+    margin-left: 60px;
     flex-grow: 1;
 }
 
 .about-us .image {
     background: url("/images/Designer%20(2).png") center center no-repeat;
     background-size: cover;
-    min-height: 400px;
-    position: relative;
-    border-radius: 8px;
+    min-height: 279px;
+    border-radius: 10px;
     overflow: hidden;
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 43px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
 }
 
-.about-us .image::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+.about-us .image img {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    .about-us .content h3 {
+        font-size: 30px;
+    }
+
+    .about-us .content .icon-box h4 {
+        font-size: 18px;
+    }
+
+    .about-us .content .icon-box p {
+        font-size: 14px;
+    }
+
+    .about-us .image {
+        min-height: 555px;
+    }
 }
 
 @media (max-width: 991px) {
-    .about-us .content {
-        padding: 20px 10px;
-    }
-
-    .about-us .image {
-        text-align: center;
-        min-height: 300px;
-    }
-
-    .about-us .image::after {
-        background: rgba(0, 0, 0, 0.5);
-    }
-}
-
-@media (max-width: 667px) {
-    .about-us .content {
-        padding: 15px 5px;
-    }
-
-    .about-us .image {
-        min-height: 200px;
+    .about-us .content h3 {
+        font-size: 26px;
     }
 
     .about-us .content .icon-box {
         flex-direction: column;
         align-items: flex-start;
-        text-align: center;
     }
 
     .about-us .content .icon-box h4,
     .about-us .content .icon-box p {
         margin-left: 0;
-        margin-top: 10px;
+        text-align: center;
     }
 
     .about-us .content .icon-box i {
-        margin-right: 0;
         margin-bottom: 10px;
+        float: none;
+    }
+
+    .about-us .image {
+        min-height: 376px;
+    }
+
+    .about-us .image img {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 667px) {
+    .about-us .content h3 {
+        font-size: 22px;
+    }
+
+    .about-us .content p {
+        font-size: 14px;
+    }
+
+    .about-us .content .icon-box {
+        padding: 10px;
+    }
+
+    .about-us .content .icon-box h4 {
+        font-size: 16px;
+    }
+
+    .about-us .content .icon-box p {
+        font-size: 13px;
+    }
+
+    .about-us .image {
+        min-height: 291px;
+    }
+
+    .about-us .image img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us .content h3 {
+        font-size: 20px;
+    }
+
+    .about-us .content .icon-box h4 {
+        font-size: 14px;
+    }
+
+    .about-us .content .icon-box p {
+        font-size: 12px;
+    }
+
+    .about-us .image {
+        min-height: 273px;
     }
 }
 
