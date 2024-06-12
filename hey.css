@@ -952,31 +952,41 @@
 /* Career Overview Section */
 #career-overview {
   background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#career-overview .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 #career-overview h2 {
   font-size: 2.5em;
   color: #333;
+  margin-bottom: 30px;
 }
 
 #career-overview p {
   font-size: 1.2em;
   color: #666;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .career-highlights {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  gap: 20px;
 }
 
 .career-highlights .highlight {
   flex: 1 1 calc(25% - 20px);
-  min-width: 300px;
+  min-width: 250px;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 10px;
   padding: 20px;
   text-align: center;
@@ -986,13 +996,13 @@
 
 .career-highlights .highlight:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .career-highlights .highlight i {
-  font-size: 2em;
+  font-size: 2.5em;
   color: #0073e6;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .career-highlights .highlight h3 {
@@ -1020,6 +1030,75 @@
 #career-overview a:hover {
   background-color: #005bb5;
 }
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .career-highlights .highlight {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  #career-overview h2 {
+    font-size: 2em;
+  }
+
+  #career-overview p {
+    font-size: 1em;
+  }
+
+  .career-highlights .highlight {
+    flex: 1 1 100%;
+  }
+
+  #career-overview a {
+    font-size: 0.9em;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  #career-overview h2 {
+    font-size: 1.8em;
+  }
+
+  #career-overview p {
+    font-size: 0.9em;
+  }
+
+  .career-highlights .highlight {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+
+  #career-overview a {
+    font-size: 0.9em;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #career-overview h2 {
+    font-size: 1.5em;
+  }
+
+  #career-overview p {
+    font-size: 0.8em;
+  }
+
+  .career-highlights .highlight {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+
+  #career-overview a {
+    font-size: 0.8em;
+    padding: 8px 16px;
+  }
+}
+
+
+
 
 /* IT Services Section */
 #it-services {
