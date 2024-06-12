@@ -1344,9 +1344,9 @@ element.style {
   padding-bottom: 40px;
 }
 
-.footer-top h3 {
+.footer-top h4 {
   color: #f1c40f;
-  margin-bottom: 20px;
+  margin-top: 20px;
   font-size: 1.8em;
   font-weight: bold;
   text-shadow: 1px 1px 2px #000;
@@ -1467,4 +1467,27 @@ element.style {
 
 .footer-bottom .credits a:hover {
   text-decoration: underline;
+}
+/* Style for the email section */
+.footer-contact-info .email {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.footer-contact-info .email .icon {
+  margin-right: 8px;
+  color: #f7f319; /* Example color for the icon */
+  font-size: 1.2em; /* Adjust the size as needed */
+}
+
+.footer-contact-info .email a {
+  color: #fff; /* Example color for the email text */
+  text-decoration: none; /* Remove underline from the link */
+  font-size: 1em; /* Adjust the font size as needed */
+}
+
+.footer-contact-info .email a:hover {
+  color: #f5e614; /* Example hover color for the email text */
+  text-decoration: underline; /* Add underline on hover */
 }
