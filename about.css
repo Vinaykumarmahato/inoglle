@@ -1,374 +1,1189 @@
-#vinaykumarmahato-ADV-SparkTech-Club {
-    background-color: #f9f9f9;
-    padding: 40px 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
+/* Navbar Styles */
+.menu {
+    background-color: #007bff; /* Navbar background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
-#vinaykumarmahato-ADV-SparkTech-Club .container {
-    max-width: 800px;
-    margin: 0 auto;
+.menu .navbar-brand img {
+    max-height: 40px; /* Adjust the height of the logo */
+}
+
+.menu .navbar-toggler {
+    border: none;
+    outline: none; /* Remove outline on focus */
+}
+
+.menu .navbar-toggler-icon {
+    background-color: #fff; /* Color of the toggler icon */
+    border-radius: 2px; /* Make toggler icon slightly rounded */
+}
+
+.menu .navbar-nav .nav-link {
+    color: #fff; /* Color of the navbar links */
+    padding: 8px 15px; /* Add padding to navbar links */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.menu .navbar-nav .nav-link:hover {
+    color: #f8f9fa; /* Color of the navbar links on hover */
+}
+
+.menu .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    background-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border: none; /* Remove border */
+}
+
+.menu .dropdown-menu {
+    background-color: #007bff; /* Background color of dropdown menu */
+    border: none; /* Remove border */
+}
+
+.menu .dropdown-menu a.dropdown-item {
+    color: #fff; /* Color of dropdown items */
+    padding: 10px 20px; /* Add padding to dropdown items */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+}
+
+.menu .dropdown-menu a.dropdown-item:hover {
+    background-color: #0056b3; /* Background color of dropdown items on hover */
+    color: #fff; /* Color of dropdown items on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .menu .navbar-nav {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* General Styles for Application Form */
+.application-form {
+    background-color: #f5f5f5 !important;
+    padding: 40px 20px !important;
+    border-radius: 8px !important;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+.application-form .container {
+    max-width: 800px !important;
+    margin: 0 auto !important;
+}
+
+.application-form h1 {
+    text-align: center !important;
+    color: #333 !important;
+    margin-bottom: 30px !important;
+    font-size: 2.5em !important;
+}
+
+.application-form form {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.application-form .form-group {
+    margin-bottom: 20px !important;
+}
+
+.application-form label {
+    font-weight: bold !important;
+    margin-bottom: 5px !important;
+    display: block !important;
+    color: #333 !important;
+}
+
+.application-form input[type="text"],
+.application-form input[type="email"],
+.application-form input[type="tel"],
+.application-form input[type="date"],
+.application-form input[type="number"],
+.application-form input[type="file"],
+.application-form textarea,
+.application-form select {
+    width: 100% !important;
+    padding: 10px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 5px !important;
+    font-size: 1em !important;
+}
+
+.application-form textarea {
+    resize: vertical !important;
+}
+
+.application-form .btn-primary {
+    background-color: #007bff !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    font-size: 1em !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    margin-top: 20px !important;
+}
+
+.application-form .btn-primary:hover {
+    background-color: #0056b3 !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .application-form {
+        padding: 20px 10px !important;
+    }
+}
+/* Campus Ambassador Program Section */
+.campus-ambassador-program {
+    padding: 50px 0;
+  }
+  
+  .campus-ambassador-program h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #070303;
+    align-items: center;
+  }
+  
+  .campus-ambassador-program h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .campus-ambassador-program p,
+  .campus-ambassador-program ul {
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  .campus-ambassador-program ul li {
+    margin-bottom: 10px;
+  }
+  
+  .campus-ambassador-program .contact-button {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .campus-ambassador-program .contact-button .btn {
+    padding: 6px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #ff6b6b;
+    border: 2px solid #ff6b6b;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .campus-ambassador-program .contact-button .btn:hover {
+    background-color: #ff8c8c;
+    color: #fff;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .campus-ambassador-program h2 {
+      font-size: 2rem;
+    }
+    
+    .campus-ambassador-program h3 {
+      font-size: 1.5rem;
+    }
+    
+    .campus-ambassador-program .contact-button .btn {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .campus-ambassador-program h2 {
+      font-size: 1.8rem;
+    }
+    
+    .campus-ambassador-program h3 {
+      font-size: 1.2rem;
+    }
+    
+    .campus-ambassador-program .contact-button .btn {
+      font-size: 0.9rem;
+    }
+  }
+  /* Apply Button */
+.apply-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.apply-button .btn {
+    padding: 6px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.apply-button .btn:hover {
+    background-color: #3366f5;
+}
+b, strong {
+    font-weight: bolder;
+    color: #ff0200;
+}
+/* Centering the heading */
+.container-inoglle {
+    display: flex;
+    justify-content: center;
+}
+
+.heading-wrapper {
     text-align: center;
 }
 
-#vinaykumarmahato-ADV-SparkTech-Club h2#ADV-SparkTech {
-    font-size: 2em;
-    color: #333;
+
+.contact-us-section {
+    padding: 50px 0;
+}
+.contact-info {
+    text-align: center;
+    padding: 40px;
+}
+
+.contact-details {
+    margin-top: 20px;
+}
+
+.contact-method {
     margin-bottom: 20px;
 }
 
-#vinaykumarmahato-ADV-SparkTech-Club p#ADV-SparkTech {
-    font-size: 1em;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 30px;
+.contact-method h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 
-#vinaykumarmahato-ADV-SparkTech-Club .btn-group#ADV-SparkTech {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+.contact-method p {
+    font-size: 16px;
+    margin-bottom: 0;
 }
 
-#vinaykumarmahato-ADV-SparkTech-Club a.btn#regbyvinay {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1em;
+.btn-primary {
+    background-color: #d61b82;
     color: #fff;
-    background-color: #d216eb;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #c11ce2;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.contact-form h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-form form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form form label {
+    font-weight: bold;
+}
+
+.contact-form form input[type="text"],
+.contact-form form input[type="email"],
+.contact-form form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form form textarea {
+    resize: vertical;
+}
+
+.contact-form form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
     border: none;
     border-radius: 5px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#vinaykumarmahato-ADV-SparkTech-Club a.btn#regbyvinay:hover {
-    background-color: #ee2020;
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-    #vinaykumarmahato-ADV-SparkTech-Club h2#ADV-SparkTech {
-        font-size: 1.5em;
-    }
-
-    #vinaykumarmahato-ADV-SparkTech-Club p#ADV-SparkTech {
-        font-size: 0.9em;
-    }
-
-    #vinaykumarmahato-ADV-SparkTech-Club a.btn#regbyvinay {
-        font-size: 0.9em;
-        padding: 8px 16px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    #vinaykumarmahato-ADV-SparkTech-Club h2#ADV-SparkTech {
-        font-size: 1.2em;
-    }
-
-    #vinaykumarmahato-ADV-SparkTech-Club p#ADV-SparkTech {
-        font-size: 0.8em;
-    }
-
-    #vinaykumarmahato-ADV-SparkTech-Club a.btn#regbyvinay {
-        font-size: 0.8em;
-        padding: 6px 12px;
-    }
-}
-/* Contact Section */
-#contact {
-    padding: 60px 0;
-    background-color: #f9f9f9;
-    background-image: url('path/to/background-image.jpg'); /* Add a background image */
-    background-size: cover;
-    background-position: center;
-}
-
-#contact .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background for contrast */
-    border-radius: 10px;
-}
-
-#contact h3 {
-    font-size: 28px; /* Increased font size */
-    margin-bottom: 15px;
-    font-weight: 700;
-    color: #007bff; /* Changed color to primary color */
-    text-transform: uppercase; /* Added uppercase transformation */
-    text-align: center; /* Center aligned */
-}
-
-#contact p {
-    margin-bottom: 10px;
-    font-size: 18px; /* Increased font size */
-    color: #555;
-    text-align: center; /* Center aligned */
-}
-
-#contact .info-item {
-    background: #fff;
-    padding: 25px; /* Increased padding */
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
-    border-radius: 8px;
-    margin-bottom: 20px;
-    transition: all 0.3s ease;
-    display: flex; /* Flexbox layout */
-    align-items: center; /* Center alignment */
-}
-
-#contact .info-item:hover {
-    box-shadow: 0 0 35px rgba(0, 0, 0, 0.2); /* Stronger hover effect */
-}
-
-#contact .info-item i {
-    font-size: 30px; /* Increased icon size */
-    color: #007bff;
-    margin-right: 15px;
-}
-
-#contact .php-email-form .form-control {
-    border-radius: 5px;
-    box-shadow: none;
-    font-size: 16px; /* Increased font size */
-    border: 1px solid #ddd;
-}
-
-#contact .php-email-form .form-control:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); /* Slightly stronger focus effect */
-}
-
-#contact .php-email-form button[type="submit"] {
-    background: #007bff;
-    border: 0;
-    padding: 12px 30px; /* Adjusted padding */
-    color: #fff;
-    transition: all 0.4s;
-    border-radius: 5px;
-    font-size: 16px; /* Increased font size */
     cursor: pointer;
 }
 
-#contact .php-email-form button[type="submit"]:hover {
-    background: #0056b3;
+.contact-form form button:hover {
+    background-color: #99116c;
 }
 
-/* Responsive adjustments */
-@media (max-width: 992px) {
-    #contact .info-item {
-        padding: 20px;
-        flex-direction: column; /* Stack items vertically */
-        text-align: center; /* Center text */
-    }
 
-    #contact .php-email-form .form-control {
-        font-size: 14px;
-    }
+.btn-primary:hover {
+    background-color: #210929;
+    border-color: #128c7e;
+}
+.contact-method button {
+    background-color: #dd0c6e;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
 
-    #contact .php-email-form button[type="submit"] {
-        padding: 10px 24px;
-    }
+.contact-method button:hover {
+    background-color: #030503;
+}
+
+
+
+
+
+
+/* General Styles for the specified sections */
+main#Inoglle\ Internship {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Container Styles */
+.internships .container, .internship-benefits .container, .internship-domains .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Typography */
+#Inoglle h1, #Inoglle h2, #Inoglle h4, #Inoglle h5,
+#inoglle h1, #inoglle h2, #inoglle h4, #inoglle h5,
+#Inogle h1, #Inogle h2, #Inogle h4, #Inogle h5,
+#inoglle\ internship h1, #inoglle\ internship h2, #inoglle\ internship h4, #inoglle\ internship h5 {
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+#Inoglle h1, #inoglle h1, #Inogle h1, #inoglle\ internship h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#Inoglle h2, #inoglle h2, #Inogle h2, #inoglle\ internship h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#Inoglle h4, #inoglle h4, #Inogle h4, #inoglle\ internship h4,
+#Inoglle h5, #inoglle h5, #Inogle h5, #inoglle\ internship h5 {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+#Inoglle p, #inoglle p, #Inogle p, #inoglle\ internship p {
+  margin-bottom: 15px;
+}
+
+/* List Styles */
+#Inoglle ul, #inoglle ul, #Inogle ul, #inoglle\ internship ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#Inoglle ul li, #inoglle ul li, #Inogle ul li, #inoglle\ internship ul li {
+  margin-bottom: 10px;
+}
+
+#Inoglle ul li strong, #inoglle ul li strong, #Inogle ul li strong, #inoglle\ internship ul li strong {
+  color: #0056b3;
+}
+
+/* Button Styles */
+#Inoglle .btn-primary, #inoglle .btn-primary, #Inogle .btn-primary, #inoglle\ internship .btn-primary {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#Inoglle .btn-primary:hover, #inoglle .btn-primary:hover, #Inogle .btn-primary:hover, #inoglle\ internship .btn-primary:hover {
+  background-color: #003d80;
+}
+
+/* Image Styles */
+#Inoglle .img-fluid, #inoglle .img-fluid, #Inogle .img-fluid, #inoglle\ internship .img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Table Styles */
+#Inoglle .table, #inoglle .table, #Inogle .table, #inoglle\ internship .table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#Inoglle .table th, #inoglle .table th, #Inogle .table th, #inoglle\ internship .table th,
+#Inoglle .table td, #inoglle .table td, #Inogle .table td, #inoglle\ internship .table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#Inoglle .table th, #inoglle .table th, #Inogle .table th, #inoglle\ internship .table th {
+  background-color: #f4f4f4;
+  color: #0056b3;
+}
+
+#Inoglle .table-striped tbody tr:nth-of-type(odd), #inoglle .table-striped tbody tr:nth-of-type(odd), #Inogle .table-striped tbody tr:nth-of-type(odd), #inoglle\ internship .table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+#Inoglle .table-striped tbody tr:hover, #inoglle .table-striped tbody tr:hover, #Inogle .table-striped tbody tr:hover, #inoglle\ internship .table-striped tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  #Inoglle h1, #inoglle h1, #Inogle h1, #inoglle\ internship h1,
+  #Inoglle h2, #inoglle h2, #Inogle h2, #inoglle\ internship h2 {
+      font-size: 2rem;
+  }
+
+  #Inoglle h4, #inoglle h4, #Inogle h4, #inoglle\ internship h4,
+  #Inoglle h5, #inoglle h5, #Inogle h5, #inoglle\ internship h5 {
+      font-size: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
-    #contact {
-        padding: 40px 20px; /* Adjusted padding */
-    }
+  .row {
+      display: flex;
+      flex-direction: column;
+  }
 
-    #contact h3 {
-        font-size: 24px;
-    }
+  .col-md-6 {
+      width: 100%;
+      margin-bottom: 20px;
+  }
 
-    #contact p {
-        font-size: 16px;
-    }
+  #Inoglle .table, #inoglle .table, #Inogle .table, #inoglle\ internship .table,
+  #Inoglle .table th, #inoglle .table th, #Inogle .table th, #inoglle\ internship .table th,
+  #Inoglle .table td, #inoglle .table td, #Inogle .table td, #inoglle\ internship .table td {
+      display: block;
+      width: 100%;
+  }
 
-    #contact .php-email-form .form-control {
-        font-size: 14px;
-    }
+  #Inoglle .table th, #inoglle .table th, #Inogle .table th, #inoglle\ internship .table th {
+      text-align: right;
+      background-color: transparent;
+      color: #333;
+  }
+
+  #Inoglle .table td, #inoglle .table td, #Inogle .table td, #inoglle\ internship .table td {
+      text-align: right;
+      border-top: none;
+      position: relative;
+      padding-left: 50%;
+  }
+
+  #Inoglle .table td::before, #inoglle .table td::before, #Inogle .table td::before, #inoglle\ internship .table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-weight: bold;
+      text-align: left;
+  }
 }
 
-@media (max-width: 480px) {
-    #contact {
-        padding: 30px 10px; /* Adjusted padding */
-    }
+@media (max-width: 576px) {
+  #Inoglle h1, #inoglle h1, #Inogle h1, #inoglle\ internship h1,
+  #Inoglle h2, #inoglle h2, #Inogle h2, #inoglle\ internship h2 {
+      font-size: 1.5rem;
+  }
 
-    #contact h3 {
-        font-size: 20px;
-    }
+  #Inoglle h4, #inoglle h4, #Inogle h4, #inoglle\ internship h4,
+  #Inoglle h5, #inoglle h5, #Inogle h5, #inoglle\ internship h5 {
+      font-size: 0.875rem;
+  }
 
-    #contact p {
-        font-size: 14px;
-    }
+  #Inoglle .table td::before, #inoglle .table td::before, #Inogle .table td::before, #inoglle\ internship .table td::before {
+      padding-left: 10px;
+  }
+}
 
-    #contact .php-email-form .form-control {
-        font-size: 14px;
-    }
+/* Section Specific Styles */
+.internships ul, .internship-domains ul {
+  padding-left: 20px;
+}
 
-    #contact .php-email-form button[type="submit"] {
-        padding: 8px 20px; /* Adjusted padding */
-        font-size: 14px; /* Adjusted font size */
-    }
+.internship-benefits ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 20px;
 }
 
 
-/* Team Section */
-#Team-Section-ADV-SparkTech-Club {
-    padding: 60px 0;
-    background-color: #f9f9f9;
+
+h2, h3 {
+  text-align: center;
+  color: #007bff;
 }
 
-#Team-Section-ADV-SparkTech-Club .section-headline {
-    margin-bottom: 40px;
+/* Domain Cards */
+.card {
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-basis: calc(33.33% - 20px);
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
-#Team-Section-ADV-SparkTech-Club .section-headline h2 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #333;
-    text-transform: uppercase;
-    margin: 0;
-    position: relative;
-    display: inline-block;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #007bff;
+.card:last-child {
+  margin-right: 0;
 }
 
-/* Flexbox container for the team members */
-#Team-Section-ADV-SparkTech-Club .team-scroll {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    padding-bottom: 20px; /* To ensure space for scrollbar */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-#Team-Section-ADV-SparkTech-Club .team-scroll::-webkit-scrollbar {
-    height: 10px;
+.card-content {
+  padding: 20px;
 }
 
-#Team-Section-ADV-SparkTech-Club .team-scroll::-webkit-scrollbar-thumb {
-    background: #007bff;
-    border-radius: 10px;
+.card img {
+  display: block;
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
 }
 
-#Team-Section-ADV-SparkTech-Club .team-scroll::-webkit-scrollbar-track {
-    background: #f1f1f1;
+.card h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
 }
 
-#Team-Section-ADV-SparkTech-Club .single-team-member {
-    margin-right: 20px;
-    flex: 0 0 auto;
-    transition: all 0.3s ease-in-out;
+.card p {
+  text-align: justify;
 }
 
-#Team-Section-ADV-SparkTech-Club .single-team-member:hover {
-    transform: translateY(-10px);
+/* Responsive Design */
+@media (max-width: 991px) {
+  .card {
+      flex-basis: calc(50% - 20px);
+  }
 }
 
-#Team-Section-ADV-SparkTech-Club .team-img {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
+@media (max-width: 767px) {
+  .card {
+      flex-basis: calc(100% - 20px);
+      margin-right: 0;
+  }
 }
 
-#Team-Section-ADV-SparkTech-Club .team-img img {
-    width: 100%;
-    height: auto;
-    transition: all 0.3s ease-in-out;
+
+
+/* Style for internship domains section */
+/* .services {
+  padding: 80px 0;
+} */
+
+.services .icon-box {
+  text-align: center;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
-#Team-Section-ADV-SparkTech-Club .team-img:hover img {
-    transform: scale(1.1);
+.services .icon-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
 }
 
-#Team-Section-ADV-SparkTech-Club .team-social-icon {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px 0;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
+.services .icon-box .icon {
+  margin: 0 auto 20px auto;
+  width: 64px; /* Adjust icon size here */
+  height: 64px; /* Adjust icon size here */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #4caf50;
+  transition: background-color 0.3s ease-in-out;
 }
 
-#Team-Section-ADV-SparkTech-Club .team-img:hover .team-social-icon {
-    opacity: 1;
+.services .icon-box .icon img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
-#Team-Section-ADV-SparkTech-Club .team-social-icon ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+.services .icon-box:hover .icon {
+  background-color: #2e7d32;
 }
 
-#Team-Section-ADV-SparkTech-Club .team-social-icon ul li {
-    margin: 0 10px;
+.services .icon-box .title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #333;
 }
 
-#Team-Section-ADV-SparkTech-Club .team-social-icon ul li a {
-    color: #fff;
-    font-size: 18px;
-    transition: color 0.3s ease;
+.services .icon-box .description {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0;
 }
 
-#Team-Section-ADV-SparkTech-Club .team-social-icon ul li a:hover {
-    color: #007bff;
+.services .icon-box a {
+  color: #333;
+  transition: color 0.3s;
 }
 
-#Team-Section-ADV-SparkTech-Club .team-content {
-    margin-top: 20px;
-    text-align: center;
+.services .icon-box a:hover {
+  color: #4caf50;
 }
 
-#Team-Section-ADV-SparkTech-Club .team-content h4 {
+/* Responsive Design */
+@media (max-width: 991.98px) {
+  .services .icon-box {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .services .icon-box {
+    padding: 20px;
+  }
+  
+  .services .icon-box .title {
     font-size: 20px;
-    font-weight: 600;
-    color: #333;
-    margin: 0 0 5px;
+  }
 }
 
-#Team-Section-ADV-SparkTech-Club .team-content p {
-    font-size: 14px;
-    color: #777;
-    margin: 0;
+
+/* General Styling for the Section */
+#inoglle-internship {
+  padding: 60px 0;
+  background-color: #f9f9f9;
 }
 
-/* Responsive adjustments */
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.section-title p {
+  font-size: 16px;
+  color: #777;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Styling for Icon Boxes */
+.icon-box {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icon-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.icon-box i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.icon-box h4 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.icon-box p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Image Section Styling */
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.image img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    #Team-Section-ADV-SparkTech-Club .section-headline h2 {
-        font-size: 30px;
-    }
+  .col-xl-6 {
+      flex: 100%;
+      max-width: 100%;
+  }
 
-    #Team-Section-ADV-SparkTech-Club .team-content h4 {
-        font-size: 18px;
-    }
+  .section-title h2 {
+      font-size: 28px;
+  }
 
-    #Team-Section-ADV-SparkTech-Club .team-content p {
-        font-size: 13px;
-    }
+  .icon-box i {
+      font-size: 35px;
+  }
+
+  .icon-box h4 {
+      font-size: 18px;
+  }
+
+  .icon-box p {
+      font-size: 12px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .icon-box i {
+      font-size: 35px;
+  }
+
+  .icon-box h4 {
+      font-size: 18px;
+  }
+
+  .icon-box p {
+      font-size: 13px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for the Internship Benefits Section */
+#internship-at-inoglle {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#internship-at-inoglle .section-heading {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: bold;
+}
+
+#internship-at-inoglle .section-title p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+#internship-at-inoglle .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+#internship-at-inoglle .icon-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#internship-at-inoglle .icon-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#internship-at-inoglle .icon-box .icon {
+  margin-bottom: 20px;
+}
+
+#internship-at-inoglle .icon-box .icon img {
+  max-width: 80px;
+  display: block;
+  margin: 0 auto;
+}
+
+#internship-at-inoglle .icon-box .title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: bold;
+}
+
+#internship-at-inoglle .icon-box .description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+#internship-at-inoglle .btn-primary {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#internship-at-inoglle .btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  #internship-at-inoglle .icon-box {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+  }
+}
+/* Internship at Inoglle Section */
+#internship.at.inoglle {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+#internship.at.inoglle h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+#internship.at.inoglle .section-title p {
+  font-size: 1.125rem;
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+#internship.at.inoglle .image-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+#internship.at.inoglle .image-section a {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+#internship.at.inoglle .image-section a:hover {
+  transform: scale(1.05);
+}
+
+#internship.at.inoglle .image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#internship.at.inoglle .text-center {
+  text-align: center;
+}
+
+#internship.at.inoglle .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: 10px 20px;
+  font-size: 1.125rem;
+  transition: background-color 0.3s, border-color 0.3s;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#internship.at.inoglle .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  #internship.at.inoglle h2 {
+      font-size: 2.2rem;
+  }
+
+  #internship.at.inoglle .section-title p {
+      font-size: 1rem;
+  }
+
+  #internship.at.inoglle .btn-primary {
+      font-size: 1rem;
+      padding: 10px 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  #internship.at.inoglle h2 {
+      font-size: 2rem;
+  }
+
+  #internship.at.inoglle .section-title p {
+      font-size: 0.95rem;
+  }
+
+  #internship.at.inoglle .btn-primary {
+      font-size: 0.95rem;
+      padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  #internship.at.inoglle h2 {
+      font-size: 1.8rem;
+  }
+
+  #internship.at.inoglle .section-title p {
+      font-size: 0.9rem;
+  }
+
+  #internship.at.inoglle .image-section {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #internship.at.inoglle .image-section a {
+      margin-bottom: 20px;
+  }
+
+  #internship.at.inoglle .btn-primary {
+      font-size: 0.9rem;
+      padding: 8px 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  #internship.at.inoglle h2 {
+      font-size: 1.5rem;
+  }
+
+  #internship.at.inoglle .section-title p {
+      font-size: 0.85rem;
+  }
+
+  #internship.at.inoglle .btn-primary {
+      font-size: 0.85rem;
+      padding: 6px 12px;
+  }
+}
+
+
+
+/* Inoglle Internship Form Section */
+#inoglle-internship-form {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+#inoglle-internship-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#inoglle-internship-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+#inoglle-internship-form input[type="text"],
+#inoglle-internship-form input[type="email"],
+#inoglle-internship-form input[type="tel"],
+#inoglle-internship-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+#inoglle-internship-form input[type="text"]:focus,
+#inoglle-internship-form input[type="email"]:focus,
+#inoglle-internship-form input[type="tel"]:focus,
+#inoglle-internship-form select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+#inoglle-internship-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+#inoglle-internship-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+#inoglle-internship-form img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #inoglle-internship-form {
+      padding: 20px;
+  }
+
+  #inoglle-internship-form h2 {
+      font-size: 1.8rem;
+  }
+
+  #inoglle-internship-form input[type="text"],
+  #inoglle-internship-form input[type="email"],
+  #inoglle-internship-form input[type="tel"],
+  #inoglle-internship-form select {
+      font-size: 1rem;
+      padding: 8px;
+  }
+
+  #inoglle-internship-form button {
+      font-size: 0.9rem;
+      padding: 10px;
+  }
 }
 
 @media (max-width: 480px) {
-    #Team-Section-ADV-SparkTech-Club .section-headline h2 {
-        font-size: 24px;
-    }
+  #inoglle-internship-form {
+      padding: 15px;
+  }
 
-    #Team-Section-ADV-SparkTech-Club .team-content h4 {
-        font-size: 16px;
-    }
+  #inoglle-internship-form h2 {
+      font-size: 1.6rem;
+  }
 
-    #Team-Section-ADV-SparkTech-Club .team-content p {
-        font-size: 12px;
-    }
+  #inoglle-internship-form input[type="text"],
+  #inoglle-internship-form input[type="email"],
+  #inoglle-internship-form input[type="tel"],
+  #inoglle-internship-form select {
+      font-size: 0.9rem;
+      padding: 7px;
+  }
+
+  #inoglle-internship-form button {
+      font-size: 0.8rem;
+      padding: 8px;
+  }
+}
+ /* Optional: additional styling for the button */
+ button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
 }

@@ -80,59 +80,79 @@
     </div>
    <main>
     
-    <section class="campus-ambassador-program">
-        <div class="container">
+    <section id="inoglle-internship-form">
+        <form action="submit_application.php" method="post" enctype="multipart/form-data">
+            <h2>Contact Information</h2>
+            <label for="fullName">Full Name *</label><br>
+            <input type="text" id="fullName" name="fullName" required><br><br>
             
-                <div class="container-inoglle">
-                    <div class="heading-wrapper">
-                        <h2>Campus Ambassador Program at Inoglle</h2>
-                        </div> </div>
-                
+            <label for="email">Email Address *</label><br>
+            <input type="email" id="email" name="email" required><br><br>
             
-            <p>Valuable internship experiences can be a significant investment. We offer an opportunity to participate in our virtual internship program at no cost through the Inoglle Campus Ambassador Program.</p>
+            <label for="phone">Phone Number *</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
             
-            <h3>What is the Campus Ambassador Program?</h3>
-            <p>The Campus Ambassador Program is a fantastic way for students to:</p>
-            <ul>
-                <li><strong>Gain Experience:</strong> Develop skills in communication, leadership, and marketing by promoting Inoglle's internship program to your fellow students.</li>
-                <li><strong>Earn Money:</strong> For each student you successfully recruit using your unique code, you'll earn a commission, helping you cover expenses.</li>
-                <li><strong>Boost Your Resume:</strong> Demonstrate initiative, marketing skills, and leadership qualities - all highly sought-after by employers.</li>
-                <li><strong>Network & Build Relationships:</strong> Connect with Inoglle staff and fellow ambassadors, expanding your network and opening doors to future opportunities.</li>
-            </ul>
-            
-            <h3>Why Apply to be a Campus Ambassador?</h3>
-            <h5>Here's why:</h5>
-            <ul>
-                <li><strong>Free Internship:</strong> Gain work experience in your field without financial barriers.</li>
-                <li><strong>Develop Marketable Skills:</strong> Acquire skills that impress future employers.</li>
-                <li><strong>Network & Gain Exposure:</strong> Connect with industry professionals and build relationships within the Inoglle community.</li>
-                <li><strong>Flexible Commitment:</strong> Balance studies with the program, gaining experience while managing academic workload.</li>
-            </ul>
+            <label for="university">University/College Name *</label><br>
+            <input type="text" id="university" name="university" required><br><br>
 
-            
-            <p>By becoming a Campus Ambassador, you'll gain valuable experience, earn money, and build your network, all while helping fellow students discover opportunities through Inoglle's virtual internship program.</p>
-             <!-- Apply Button -->
-        <div class="apply-button">
-            <a href="CAP_Reg.html" class="btn btn-success">Apply Now</a>
-        </div>
-            
-            <h3>Ready to get started?</h3>
+            <label for="yearOfStudy">Current Year of Study *</label><br>
+            <select id="yearOfStudy" name="yearOfStudy" required>
+                <option value="1">Year</option>
 
-<p>If you have any questions or need assistance, feel free to reach out to us directly on WhatsApp. Our team will be happy to help you with detailed information about the Campus Ambassador program, application process, and responsibilities.</p>
-<div class="contact-button">
-    <a href="https://wa.me/9931860964" class="btn btn-whatsapp">
-        <i class="fab fa-whatsapp"></i> Contact Us on WhatsApp
-    </a>
-</div>
+                <option value="1">First Year, Semester 1</option>
+                <option value="2">First Year, Semester 2</option>
+                <option value="3">Second Year, Semester 3</option>
+                <option value="4">Second Year, Semester 4</option>
+                <option value="5">Third Year, Semester 5</option>
+                <option value="6">Third Year, Semester 6</option>
+                <option value="7">Fourth Year, Semester 7</option>
+                <option value="8">Fourth Year, Semester 8</option>
+                <option value="9">Pass Out</option>
+                <option value="10">Non-Tech</option>
+            </select><br><br>
 
+            <label for="internshipDomain">Preferred Internship Domain *</label><br>
+            <select id="internshipDomain" name="internshipDomain" required>
+                <option value="Select Please">Select Your Domain</option>
 
+                <option value="webDevelopment">Web Development</option>
+                <option value="dataScience">Data Science</option>
+                <option value="artificialIntelligence">Artificial Intelligence</option>
+                <option value="javaDeveloper">Java Developer</option>
+                <option value="uiuxDesign">UI/UX Design</option>
+                <option value="pythonProgramming">Python Programming</option>
+                <option value="cPlusPlusProgramming">C++ Programming</option>
+                <option value="machineLearning">Machine Learning</option>
+                <option value="frontEndDeveloper">Front-End Developer</option>
+            </select><br><br>
+
+            <label for="internshipDuration">Internship Duration *</label><br>
+            <select id="internshipDuration" name="internshipDuration" required>
+                <option value="Select Please">Select Duration</option>
+                <option value="1Month">1 Month: ₹49</option>
+                <option value="2Months">2 Months: ₹79</option>
+                <option value="3Months">3 Months: ₹99</option>
+            </select><br><br>
+
+            <label for="learnAboutUs">Where did you learn about us? *</label><br>
+            <select id="learnAboutUs" name="learnAboutUs" required>
+                <option value="socialMedia">Social Media (Instagram, LinkedIn, etc.)</option>
+                <option value="referral">Referral (Friends, Colleagues, Relatives, etc.)</option>
+                <option value="campusPlacement">Campus Placement Cell/Coordinators</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+           
             
-            <p>Additional Tips: Personalize this message by highlighting specific skills and showcasing success stories of past Inoglle interns and Campus Ambassadors.</p>
-        </div>
+            <h3>Sample Documents</h3>
+            <img src="img/main/sample completion certificates.png" alt="Sample Completion Certificates">
+            <img src="img/main/sample offer letter.png" alt="">
+            <a href="payment-at-inoglle.html">
+                <button type="button">Next</button>
+            </a>
+            
+        </form>
     </section>
-    
-  
-    
    </main>
    
 

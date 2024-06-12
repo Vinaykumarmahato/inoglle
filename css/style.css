@@ -609,3 +609,69 @@ option{
   
   
 
+/* Navbar Styles */
+.menu {
+    background-color: #007bff; /* Navbar background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.menu .navbar-brand img {
+    max-height: 40px; /* Adjust the height of the logo */
+}
+
+.menu .navbar-toggler {
+    border: none;
+    outline: none; /* Remove outline on focus */
+}
+
+.menu .navbar-toggler-icon {
+    background-color: #fff; /* Color of the toggler icon */
+    border-radius: 2px; /* Make toggler icon slightly rounded */
+}
+
+.menu .navbar-nav .nav-link {
+    color: #fff; /* Color of the navbar links */
+    padding: 8px 15px; /* Add padding to navbar links */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.menu .navbar-nav .nav-link:hover {
+    color: #f8f9fa; /* Color of the navbar links on hover */
+}
+
+.menu .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.menu .dropdown-menu {
+    background-color: #007bff; /* Background color of dropdown menu */
+    border: none; /* Remove border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    left: auto; /* Reset left positioning */
+    right: 0; /* Position the dropdown menu to the right */
+}
+
+.menu .dropdown-menu a.dropdown-item {
+    color: #fff; /* Color of dropdown items */
+    padding: 10px 20px; /* Add padding to dropdown items */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+}
+
+.menu .dropdown-menu a.dropdown-item:hover {
+    background-color: #0056b3; /* Background color of dropdown items on hover */
+    color: #fff; /* Color of dropdown items on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .menu .navbar-nav {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+}
+

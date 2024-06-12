@@ -1,141 +1,905 @@
 /* Slider Container */
 .slider-container-vinay {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    background-color:rgba(0, 0, 0, 0.15); /* Light background color */
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color:rgba(0, 0, 0, 0.15); /* Light background color */
 }
 
 /* Slide Track */
 .slider-container-vinay .slide-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: max-content; /* Adjusts width based on content */
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: max-content; /* Adjusts width based on content */
 }
 
 /* Individual Slides */
 .slider-container-vinay .slide {
-    min-width: 80px; /* Adjust size as needed */
-    margin: 1px;
-    padding: 10px;
-    background: #fff;
-    border-radius: 350%;
-    box-shadow: 0 4px 6px rgba(7, 5, 5, 0.288);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease; /* Add subtle hover effect */
+  min-width: 80px; /* Adjust size as needed */
+  margin: 1px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 350%;
+  box-shadow: 0 4px 6px rgba(7, 5, 5, 0.288);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease; /* Add subtle hover effect */
 }
 
 .slider-container-vinay .slide img {
-    width: 80px; /* Adjust size as needed */
-    height: 80px; /* Adjust size as needed */
-    object-fit: contain;
-    border-radius: 50%;
+  width: 80px; /* Adjust size as needed */
+  height: 80px; /* Adjust size as needed */
+  object-fit: contain;
+  border-radius: 50%;
 }
 
 /* Navigation Buttons */
 .slider-container-vinay .prev, .slider-container-vinay .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    background-color: rgba(33, 223, 33, 0.5);
-    border: none;
-    border-radius: 50%;
-    color: #c231dfd0;
-    font-size: 2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(33, 223, 33, 0.5);
+  border: none;
+  border-radius: 50%;
+  color: #c231dfd0;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slider-container-vinay .prev {
-    left: 10px;
+  left: 10px;
 }
 
 .slider-container-vinay .next {
-    right: 10px;
+  right: 10px;
 }
 
 .slider-container-vinay .prev:hover, .slider-container-vinay .next:hover {
-    background-color: rgba(231, 46, 200, 0.8);
+  background-color: rgba(231, 46, 200, 0.8);
 }
 
 /* Hover Effect for Slides */
 .slider-container-vinay .slide:hover {
-    transform: scale(1.05); /* Increase size on hover */
-    box-shadow: 0 8px 12px rgba(155, 9, 111, 0.37); /* Add shadow on hover */
+  transform: scale(1.05); /* Increase size on hover */
+  box-shadow: 0 8px 12px rgba(155, 9, 111, 0.37); /* Add shadow on hover */
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .slider-container-vinay .prev, .slider-container-vinay .next {
-        width: 35px;
-        height: 35px;
-        font-size: 1.5rem;
-    }
+  .slider-container-vinay .prev, .slider-container-vinay .next {
+      width: 35px;
+      height: 35px;
+      font-size: 1.5rem;
+  }
+}
+/* General Styles */
+
+/* About Us Section */
+#about-us .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+#about-us .about-text {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+#about-us img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-lg-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 15px;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-lg-1 {
+  order: 1;
+}
+
+.order-lg-2 {
+  order: 2;
+}
+
+/* Affiliates Section */
+#vinaykumarmahato-ADV-SparkTech-Club {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+#vinaykumarmahato-ADV-SparkTech-Club h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#vinaykumarmahato-ADV-SparkTech-Club p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Enhanced Button Styles */
+.btn {
+  display: inline-block;
+  padding: 12px 24px; /* Increased padding */
+  font-size: 1.1rem; /* Increased font size */
+  color: #fff;
+  background-color: #ce1888;
+  border: none;
+  border-radius: 30px; /* Increased border radius */
+  margin: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ad146f; /* Darker background color on hover */
+  transform: translateY(-2px); /* Move button slightly up on hover */
 }
 
 
-/* About Us Section */
-.about-me {
-    padding: 80px 0;
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .col-lg-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+
+  #about-us .section-title, #vinaykumarmahato-ADV-SparkTech-Club h2 {
+      font-size: 2rem;
+  }
+
+  .btn {
+      font-size: 0.9rem;
+      padding: 10px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #about-us .section-title, #vinaykumarmahato-ADV-SparkTech-Club h2 {
+      font-size: 1.5rem;
+  }
+
+  .btn {
+      font-size: 0.8rem;
+      padding: 8px 12px;
+  }
+}
+
+
+/* About Overview Section */
+#about-overview {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f0f2f5, #dfe3e8);
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+#about-overview .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+#about-overview .overview-text {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.know-more-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.know-more-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  #about-overview {
+      padding: 50px 15px;
+  }
+
+  #about-overview .section-title {
+      font-size: 2.25rem;
+  }
+
+  #about-overview .overview-text {
+      font-size: 1.1rem;
+  }
+
+  .know-more-btn {
+      font-size: 1rem;
+      padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #about-overview {
+      padding: 40px 10px;
+  }
+
+  #about-overview .section-title {
+      font-size: 2rem;
+  }
+
+  #about-overview .overview-text {
+      font-size: 1rem;
+  }
+
+  .know-more-btn {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #about-overview {
+      padding: 30px 10px;
+  }
+
+  #about-overview .section-title {
+      font-size: 1.75rem;
+  }
+
+  #about-overview .overview-text {
+      font-size: 0.9rem;
+  }
+
+  .know-more-btn {
+      font-size: 0.8rem;
+      padding: 6px 10px;
+  }
+}
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  margin-top: 66px;
+}
+
+.menu {
+  background: linear-gradient(to right, #000, #308ff5);
+}
+
+.intro-section {
+  background: linear-gradient(to right, #007bffd6, #000);
+}
+
+.text-white {
+  color: #f8f9fa !important;
+  font-size: large;
+}
+
+/* Section Styles */
+#home-page-inoglle {
+  padding: 50px 0; /* Adjust top and bottom padding */
+  background-color: #f9f9f9; /* Background color for the section */
+}
+
+/* Title Styles */
+#home-page-inoglle .section-title {
+  font-size: 3rem; /* Increase title font size */
+  color: #f8f9fa; /* Text color */
+  margin-bottom: 20px; /* Add bottom margin */
+  text-transform: uppercase; /* Uppercase text */
+}
+
+/* Description Styles */
+#home-page-inoglle .section-description {
+  font-size: 1.2rem; /* Increase description font size */
+  color: #f8f9fa; /* Text color */
+  margin-bottom: 30px; /* Add more bottom margin */
+  line-height: 1.6; /* Increase line height for better readability */
+}
+
+/* Button Styles */
+#home-page-inoglle .btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #ce1888;
+  border: none;
+  border-radius: 50px; /* Use a larger border radius for a rounder button */
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-transform: uppercase; /* Uppercase text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+#home-page-inoglle .btn:hover {
+  background-color: #ad136f; /* Adjust hover background color */
+  transform: translateY(-2px); /* Add slight upward movement on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  #home-page-inoglle .btn {
+    font-size: 1rem; /* Adjust button font size for smaller screens */
+    padding: 12px 24px; /* Adjust button padding for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  #home-page-inoglle .btn {
+    font-size: 0.9rem; /* Further adjust button font size for even smaller screens */
+    padding: 10px 20px; /* Further adjust button padding for even smaller screens */
+  }
+}
+
+
+
+
+/* Video Box Styles */
+#home-page-inoglle .video-box img {
+  max-width: 100%; /* Ensure the video illustration stays within its container */
+  border-radius: 10px; /* Add a border radius for a rounded image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  #home-page-inoglle .section-title {
+    font-size: 2.5rem; /* Adjust title font size for smaller screens */
   }
   
-  .about-me .section-title {
-    font-size: 36px;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 30px;
-    text-align: center;
+  #home-page-inoglle .section-description {
+    font-size: 1rem; /* Adjust description font size for smaller screens */
   }
   
-  .about-me .about-text {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #666;
+  #home-page-inoglle .btn {
+    font-size: 1rem; /* Adjust button font size for smaller screens */
+    padding: 12px 24px; /* Adjust button padding for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  #home-page-inoglle .section-title {
+    font-size: 2rem; /* Further adjust title font size for even smaller screens */
   }
   
-  .about-me img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+  #home-page-inoglle .section-description {
+    font-size: 0.9rem; /* Further adjust description font size for even smaller screens */
   }
   
-  .about-me .btn-contact {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+  #home-page-inoglle .btn {
+    font-size: 0.9rem; /* Further adjust button font size for even smaller screens */
+    padding: 10px 20px; /* Further adjust button padding for even smaller screens */
   }
-  
-  .about-me .btn-contact:hover {
-    background-color: #0056b3;
+}
+
+
+
+/* Main section styles */
+.main-section {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Hero section styles */
+.hero-section {
+  background: linear-gradient(to right, #007bffd6, #000);  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.hero-section .btn-apply {
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.hero-section .btn-apply:hover {
+  background-color: #ff4b4b;
+}
+
+.hero-section img {
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Main section styles */
+.main-section {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Hero section styles */
+.hero-section {
+  background: linear-gradient(to right, #007bffd6, #000);  color: #fff;
+  padding: 90px 30px;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.hero-section .btn-apply {
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.hero-section .btn-apply:hover {
+  background-color: #ff4b4b;
+}
+
+.hero-section img {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Career info section styles */
+.career-info {
+  padding: 60px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.career-info h2, .career-info h3 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+}
+
+.career-info p {
+  font-size: 1.2em;
+  line-height: 1.8;
+}
+
+.career-info img {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.career-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.career-info ul li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.career-info ul li::before {
+  content: '•';
+  color: #007bff;
+  position: absolute;
+  left: 0;
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
+/* Job openings section styles */
+.job-openings {
+  background-color: #e9ecef;
+  padding: 60px 20px;
+}
+
+.job-openings h3 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.job-opening {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.job-opening h4 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.job-opening p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.job-opening ul {
+  list-style: none;
+  padding: 0;
+}
+
+.job-opening ul li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.job-opening ul li::before {
+  content: '•';
+  color: #007bff;
+  position: absolute;
+  left: 0;
+  font-size: 1.3em;
+  line-height: 1.2;
+}
+
+.job-opening .btn-apply {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.job-opening .btn-apply:hover {
+  background-color: #0056b3;
+}
+
+.job-openings img {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Employee testimonials section styles */
+.career-info .testimonial {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.career-info .testimonial p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.career-info img {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* CTA section styles */
+.cta-section {
+  background: linear-gradient(to right, #28a745, #218838);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cta-section h3 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.cta-section .btn-apply {
+  background-color: #ffc107;
+  color: #333;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.cta-section .btn-apply:hover {
+  background-color: #e0a800;
+}
+
+.cta-section img {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  .hero-section h1 {
+      font-size: 2.5em;
   }
-  
-  /* Responsive Styling */
-  @media (max-width: 768px) {
-    .about-me .section-title {
-      font-size: 30px;
-    }
-    
-    .about-me .about-text {
-      font-size: 16px;
-    }
+
+  .hero-section p {
+      font-size: 1.1em;
   }
-  
+
+  .career-info h2, .career-info h3, .job-openings h3, .cta-section h3 {
+      font-size: 2em;
+  }
+
+  .career-info p, .job-opening p, .cta-section p {
+      font-size: 1.1em;
+  }
+
+  .career-info ul li, .job-opening ul li {
+      font-size: 1em;
+  }
+
+  .job-opening h4 {
+      font-size: 1.6em;
+  }
+
+  .hero-section img, .career-info img, .job-openings img, .cta-section img {
+      margin-top: 20px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+      font-size: 2em;
+  }
+
+  .hero-section p {
+      font-size: 1em;
+  }
+
+  .career-info h2, .career-info h3, .job-openings h3, .cta-section h3 {
+      font-size: 1.8em;
+  }
+
+  .career-info p, .job-opening p, .cta-section p {
+      font-size: 1em;
+  }
+
+  .career-info ul li, .job-opening ul li {
+      font-size: 0.9em;
+  }
+
+  .job-opening h4 {
+      font-size: 1.4em;
+  }
+}
+/* CTA section styles */
+.cta-section {
+  background: linear-gradient(to right, #28a745, #218838);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cta-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cta-section img {
+  display: block;
+  margin: 20px auto;
+  max-width: 300px;  /* Adjust this value to control the size */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.cta-section h3 {
+  font-size: 2.2em;
+  margin: 20px 0;
+}
+
+.cta-section p {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.cta-section .btn-apply {
+  background-color: #ffc107;
+  color: #333;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.cta-section .btn-apply:hover {
+  background-color: #e0a800;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  .cta-section h3 {
+      font-size: 2em;
+  }
+
+  .cta-section p {
+      font-size: 1.1em;
+  }
+
+  .cta-section img {
+      max-width: 250px;  /* Adjust this value to control the size on smaller screens */
+      margin: 20px auto;
+      border-radius: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-section h3 {
+      font-size: 1.8em;
+  }
+
+  .cta-section p {
+      font-size: 1em;
+  }
+
+  .cta-section img {
+      max-width: 200px;  /* Adjust this value to control the size on smaller screens */
+      margin: 20px auto;
+      border-radius: 10px;
+  }
+}
+/* General Styles for Career Info Section */
+.career-info {
+  background-color: #ffffff; /* White background */
+  padding: 40px 20px; /* Spacing around the content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 20px 0; /* Spacing above and below the section */
+}
+
+.career-info .container {
+  max-width: 1200px; /* Maximum width for large screens */
+  margin: 0 auto; /* Center the container */
+}
+
+.career-info h3 {
+  text-align: center; /* Center-align the heading */
+  color: #333333; /* Dark grey text color */
+  margin-bottom: 30px; /* Spacing below the heading */
+  font-size: 2em; /* Large font size */
+  font-weight: bold; /* Bold font */
+}
+
+.career-info .row {
+  display: flex; /* Flexbox for row layout */
+  flex-wrap: wrap; /* Wrap children if needed */
+  align-items: center; /* Center items vertically */
+}
+
+.career-info .testimonial {
+  background-color: #f8f9fa; /* Light grey background for testimonials */
+  padding: 20px; /* Spacing inside the testimonial */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 20px; /* Spacing below each testimonial */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  font-size: 1.1em; /* Slightly larger font */
+}
+
+.career-info .testimonial p {
+  color: #555555; /* Medium grey text color */
+  line-height: 1.6; /* Increased line height for readability */
+  margin: 0; /* Remove default margin */
+}
+
+.career-info .col-md-6 {
+  flex: 0 0 50%; /* Ensure columns are 50% width on medium and larger screens */
+  max-width: 50%; /* Prevent columns from growing larger than 50% */
+  padding: 10px; /* Spacing inside columns */
+}
+
+.career-info .img-fluid {
+  max-width: 100%; /* Ensure image scales down */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for image */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .career-info h3 {
+      font-size: 1.8em; /* Slightly smaller font size for small screens */
+  }
+
+  .career-info .col-md-6 {
+      flex: 0 0 100%; /* Columns take full width on small screens */
+      max-width: 100%; /* Ensure columns do not exceed full width */
+  }
+
+  .career-info .testimonial {
+      font-size: 1em; /* Standard font size on small screens */
+  }
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inoglle payment</title>
+    <style>
+        /* Container styling */
+        section {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    
+        /* Heading styling */
+        h2 {
+            text-align: center;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+    
+        /* Note section styling */
+        .note {
+            background-color: #f9f9f9;
+            border-left: 5px solid #007bff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            color: #555555;
+            font-size: 0.9em;
+        }
+    
+        /* Form group styling */
+        .form-group {
+            margin-bottom: 15px;
+        }
+    
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333333;
+            font-weight: bold;
+        }
+    
+        .form-group input[type="text"],
+        .form-group input[type="file"],
+        .form-group input[type="datetime-local"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+    
+        .form-group input[type="file"] {
+            padding: 5px;
+        }
+    
+    /* General styling for form-group */
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    /* Styling for the submit button */
+    .form-group input[type="submit"] {
+        width: 100%;
+        padding: 15px;
+        background-color: #28a745;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Hover effect for the submit button */
+    .form-group input[type="submit"]:hover {
+        background-color: #218838;
+        transform: scale(1.02);
+    }
+
+    /* Responsive design for smaller screens */
+    @media (max-width: 600px) {
+        .form-group input[type="submit"] {
+            padding: 12px;
+            font-size: 0.9em;
+        }
+    }
+        .form-group input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            background-color: #28a745;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+    
+        .form-group input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    
+        /* QR Code styling */
+        .form-group img {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 100%;
+            border-radius: 5px;
+        }
+    
+        /* Responsive styling */
+        @media (max-width: 600px) {
+            section {
+                padding: 15px;
+            }
+    
+            .form-group input[type="text"],
+            .form-group input[type="datetime-local"] {
+                padding: 8px;
+            }
+    
+            .form-group input[type="submit"] {
+                padding: 12px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <section>
+        <h2>Payment Section</h2>
+        <div class="note">
+            <h4><strong>Instructions:</strong> Please ensure all details are accurate before submitting your payment proof. Upload all required documents to confirm your payment successfully.</h4>
+        </div>
+    
+        <div class="form-group">
+            <label for="qr-code">Scan the QR Code to Make Payment</label>
+            <img src="img/main/QR code.jpg" alt="QR Code" id="qr-code" style="width: 100%; max-width: 300px; display: block; margin: 0 auto;">
+        </div>
+    
+        <form action="submit_payment.php" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="transaction-screenshot">Transaction Screenshot</label>
+                <input type="file" id="transaction-screenshot" name="transaction_screenshot" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="transaction-id">Transaction ID</label>
+                <input type="text" id="transaction-id" name="transaction_id" placeholder="Enter Transaction ID" required>
+            </div>
+            <div class="form-group">
+                <label for="payment-amount">Payment Amount</label>
+                <input type="text" id="payment-amount" name="payment_amount" placeholder="Enter Payment Amount" required>
+            </div>
+            <div class="form-group">
+                <label for="payment-date">Date and Time of Payment</label>
+                <input type="datetime-local" id="payment-date" name="payment_date" required>
+            </div>
+            <div class="form-group">
+                <label for="passbook-image">Passbook Front Image</label>
+                <input type="file" id="passbook-image" name="passbook_image" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="bank-statement">Bank Statement (Optional)</label>
+                <input type="file" id="bank-statement" name="bank_statement" accept="image/*">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit Payment & Apply Now">
+
+            </div>
+        </form>
+    </section>
+    
+</body>
+</html>
