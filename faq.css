@@ -76,4 +76,6 @@
       padding: 10px;
     }
   }
-  
+  .menu {
+    background: linear-gradient(to right, #000, #308ff5);
+}
