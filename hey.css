@@ -1377,7 +1377,7 @@ element.style {
 }
 
 .footer-top ul li a {
-  color: #ddd;
+  color: #fff;
   text-decoration: none;
   transition: color 0.3s ease;
   display: flex;
@@ -1542,7 +1542,7 @@ h2 {
 /* Paragraph Styling */
 p {
     font-size: 1.2em;
-    color: #000;
+    color: #fff;
     margin-bottom: 40px;
     line-height: 1.6;
     font-family: 'Roboto', sans-serif;
@@ -1715,4 +1715,27 @@ p {
 /* Utility Styles */
 .text-center {
     text-align: center;
+}
+
+
+
+
+.navbar .nav-link,
+.navbar .dropdown-menu .dropdown-item {
+  color: white !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .dropdown-menu .dropdown-item:hover {
+  color: #f8f9fa !important; /* Adjust hover color if necessary */
+}
+
+
+
+
+
+
+.main-content-ADV-SparkT {
+  background-image: url('img/Home.png');
+  
 }
