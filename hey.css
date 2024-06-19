@@ -38,6 +38,13 @@
   border-radius: 50%;
 }
 
+.slide img{
+  margin-top: 10px;
+}
+
+.menu {
+  background: linear-gradient(to right, #007bffd6, #000);
+}
 /* Navigation Buttons */
 .slider-container-vinay .prev, .slider-container-vinay .next {
   position: absolute;
@@ -327,9 +334,6 @@
   margin-top: 66px;
 }
 
-.menu {
-  background: linear-gradient(to right, #000, #308ff5);
-}
 
 .intro-section {
   background: linear-gradient(to right, #007bffd6, #000);
