@@ -1,0 +1,100 @@
+/* General styling */
+section#learn-more {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #0c0303;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-image: url('img/Contact.png');
+
+
+}
+
+
+element.style{
+    max-width: 1000px;
+}
+
+
+h2#Inoglle-Project {
+    color: #ecde13;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Project section */
+.project-section {
+    margin-top: 30px;
+}
+
+.project-section h3 {
+    color: #007bff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.project-section img {
+    max-width: 100%;
+    display: block;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.project-section p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Success stories section */
+.success-stories {
+    margin-top: 30px;
+}
+
+.success-stories h3,
+.success-stories h4 {
+    color: #007bff;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.success-stories div {
+    margin-left: 0; /* Adjust as needed */
+    margin-top: 10px;
+}
+
+/* Affiliation section */
+#affliation-of-inoglle h3 {
+    color: #007bff;
+    font-size: 22px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    section#learn-more {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    section#learn-more {
+        padding: 15px;
+    }
+
+    h2#Inoglle-Project {
+        font-size: 24px;
+    }
+
+    .project-section h3 {
+        font-size: 20px;
+    }
+
+    .success-stories h3,
+    .success-stories h4 {
+        font-size: 18px;
+    }
+}
