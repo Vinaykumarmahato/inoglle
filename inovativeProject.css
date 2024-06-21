@@ -2,7 +2,7 @@
 section#learn-more {
     max-width: 1000px;
     margin: 20px auto;
-    background-color: #0c0303;
+    background-color: #ca4949;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     background-image: url('img/Contact.png');
@@ -98,3 +98,255 @@ h2#Inoglle-Project {
         font-size: 18px;
     }
 }
+
+
+/* Base styles */
+#collaborative-culture {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-image: url('img/Contact.png');
+
+}
+
+.collaborative-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.collaborative-content h2 {
+    color: #7cee12;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.collaborative-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Culture points */
+.culture-points {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.culture-points h3 {
+    color: #f1c01f;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.culture-points ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.culture-points li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Join us */
+.join-us {
+    margin-top: 30px;
+}
+
+.join-us h3 {
+    color: #fab114;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.join-us p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.learn-more-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-link:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .collaborative-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .culture-points h3,
+    .join-us h3 {
+        font-size: 1.4rem;
+    }
+
+    .collaborative-content p,
+    .culture-points li,
+    .join-us p {
+        font-size: 1rem;
+    }
+
+    .learn-more-link {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #collaborative-culture {
+        padding: 20px;
+    }
+
+    .collaborative-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .culture-points h3,
+    .join-us h3 {
+        font-size: 1.3rem;
+    }
+
+    .collaborative-content p,
+    .culture-points li,
+    .join-us p {
+        font-size: 0.95rem;
+    }
+
+    .learn-more-link {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #collaborative-culture {
+        padding: 15px;
+    }
+
+    .collaborative-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .culture-points h3,
+    .join-us h3 {
+        font-size: 1.2rem;
+    }
+
+    .collaborative-content p,
+    .culture-points li,
+    .join-us p {
+        font-size: 0.9rem;
+    }
+
+    .learn-more-link {
+        padding: 6px 12px;
+    }
+}
+
+
+
+
+/* Style for Career Growth section */
+#career-growth {
+    background-color: #fff;
+    /* background-image: url('img/Home.png'); */
+
+    padding: 40px;
+  }
+  
+  .career-growth-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .career-growth-content h2 {
+    font-size: 2.5rem;
+    color: #000;
+  }
+  
+  .career-growth-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #000;
+  }
+  
+  .career-growth-content ul {
+    text-align: left;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .career-growth-content ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .learn-more-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .learn-more-link:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for Company Information section */
+  #company-info {
+    background-color: #fff;
+    padding: 40px;
+
+  }
+  
+  .company-info-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .company-info-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .company-info-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .company-info-content ul {
+    text-align: left;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .company-info-content ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .company-info-content ul li strong {
+    font-weight: bold;
+  }
+  
+  
