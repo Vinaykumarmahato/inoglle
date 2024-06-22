@@ -223,6 +223,8 @@ b, strong {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
+    margin-top: -3px;
+
 }
 
 .btn-primary:hover {
@@ -332,6 +334,8 @@ main#Inoglle\ Internship {
 #Inoglle h2, #inoglle h2, #Inogle h2, #inoglle\ internship h2 {
   font-size: 2rem;
   font-weight: bold;
+  margin-top: 1px;
+
 }
 
 #Inoglle h4, #inoglle h4, #Inogle h4, #inoglle\ internship h4,
@@ -342,6 +346,7 @@ main#Inoglle\ Internship {
 
 #Inoglle p, #inoglle p, #Inogle p, #inoglle\ internship p {
   margin-bottom: 15px;
+  color: rgb(23, 23, 235) ;
 }
 
 /* List Styles */
@@ -411,6 +416,7 @@ main#Inoglle\ Internship {
   #Inoglle h1, #inoglle h1, #Inogle h1, #inoglle\ internship h1,
   #Inoglle h2, #inoglle h2, #Inogle h2, #inoglle\ internship h2 {
       font-size: 2rem;
+      margin-top: 1px;
   }
 
   #Inoglle h4, #inoglle h4, #Inogle h4, #inoglle\ internship h4,
@@ -497,6 +503,7 @@ main#Inoglle\ Internship {
 h2, h3 {
   text-align: center;
   color: #007bff;
+  margin-top: -38px;
 }
 
 /* Domain Cards */
@@ -569,11 +576,13 @@ h2, h3 {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
+  margin-top: 24px;
 }
 
 .services .icon-box:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 24px;
 }
 
 .services .icon-box .icon {
@@ -623,7 +632,7 @@ h2, h3 {
 /* Responsive Design */
 @media (max-width: 991.98px) {
   .services .icon-box {
-    margin-bottom: 30px;
+    margin-bottom: -3px;
   }
 }
 
@@ -661,6 +670,7 @@ h2, h3 {
   color: #777;
   max-width: 600px;
   margin: 0 auto;
+  margin-top: -24px;
 }
 
 /* Styling for Icon Boxes */
