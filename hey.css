@@ -1526,19 +1526,25 @@ element.style {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(19, 1, 34, 0.1);
     margin-bottom: 40px;
-}
+    background-image: url('img/Home.png');
 
+}
+#resources-at-inoglle h2 {
+  color: yellow;
+
+}
 /* Container Styling */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+
 }
 
 /* Heading Styling */
 h2 {
     font-size: 2.5em;
-    color: #000;
+    color: #f1e20d;
     margin-bottom: 30px;
     font-family: 'Roboto', sans-serif;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
